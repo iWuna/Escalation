@@ -101,6 +101,16 @@
 			return global.SSao;
 		if("TELEBLOCK")
 			return global.TELEBLOCK;
+		if("SSlighting")
+			return global.SSlighting;
+		if("SSmachines")
+			return global.SSmachines;
+		if("SSmobs")
+			return global.SSmobs;
+		if("SSnano")
+			return global.SSnano;
+		if("SSobj")
+			return global.SSobj;
 		if("SSopen_space")
 			return global.SSopen_space;
 		if("TWITCHBLOCK")
@@ -1254,6 +1264,20 @@
 			global.SSgarbage=newval;
 		if("SSlegacy")
 			global.SSlegacy=newval;
+		if("SSlighting")
+			global.SSlighting=newval;
+		if("SSmachines")
+			global.SSmachines=newval;
+		if("SSmobs")
+			global.SSmobs=newval;
+		if("SSnano")
+			global.SSnano=newval;
+		if("SSobj")
+			global.SSobj=newval;
+		if("SSopen_space")
+			global.SSopen_space=newval;
+		if("SSprocessing")
+			global.SSprocessing=newval;
 		if("SStimer")
 			global.SStimer=newval;
 		if("SSao")
@@ -2357,6 +2381,13 @@
 	"SSao",
 	"TELEBLOCK",
 	"TWITCHBLOCK",
+	"SSlighting",
+	"SSmachines",
+	"SSmapping",
+	"SSmisc_late",
+	"SSmobs",
+	"SSnano",
+	"SSobj",
 	"SSopen_space",
 	"Tier1Runes",
 	"Tier2Runes",

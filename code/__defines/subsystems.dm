@@ -78,6 +78,7 @@
 #define INIT_OPEN_SPACE 			-150
 #define INIT_BAY_LEGACY 			-200
 #define INIT_ORDER_PLANETS			-250
+#define SS_PRIORITY_NANO             20    // Updates to nanoui uis.
 #define INIT_ORDER_ARTILLERY		-300
 
 
