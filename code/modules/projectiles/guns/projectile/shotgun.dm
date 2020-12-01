@@ -20,7 +20,7 @@
 	reload_sound = 'sound/weapons/gunhandling/shell_insert.wav'
 	var/recentpump = 0 // to prevent spammage
 	fire_sound = 'sound/weapons/gunshot/m3-1.ogg'
-	empty_sound = 'sound/weapons/gunhandling/shotgun_empty.ogg'
+	empty_sound = 'sound/weapons/gunhandling/shotgun_empty.wav'
 	jam_chance = 30
 
 /obj/item/weapon/gun/projectile/shotgun/pump/consume_next_projectile()

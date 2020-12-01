@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/projectile/pistol/
-	empty_sound = 'sound/weapons/gunhandling/pistol_empty.ogg'
+	empty_sound = 'sound/weapons/gunhandling/pistol_empty.wav'
 	jam_chance = 20
 	loud = 0
 /obj/item/weapon/gun/projectile/pistol/colt

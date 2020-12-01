@@ -99,7 +99,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/c762
 	one_hand_penalty = 3
 	wielded_item_state = "arifle-wielded"
-	empty_sound = 'sound/weapons/gunhandling/arifle_empty.ogg'
+	empty_sound = 'sound/weapons/gunhandling/arifle_empty.wav'
 
 	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
 	firemodes = list(
@@ -369,7 +369,7 @@
 	unload_sound = 'sound/weapons/gunhandling/arifle_magout.wav'
 	reload_sound = 'sound/weapons/gunhandling/arifle_magin.wav'
 	cocked_sound = 'sound/weapons/gunhandling/arifle_boltback.wav'
-	empty_sound = 'sound/weapons/gunhandling/arifle_empty.ogg'
+	empty_sound = 'sound/weapons/gunhandling/arifle_empty.wav'
 
 
 	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay

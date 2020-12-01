@@ -218,7 +218,7 @@
 		if(!do_after(user, rand(4,20), src))
 			return
 		is_jammed = 0
-		playsound(src.loc, 'sound/weapons/gunhandling/unjam.ogg', 50, 1)
+		playsound(src.loc, 'sound/weapons/gunhandling/unjam.wav', 50, 1)
 	if(ammo_magazine)
 		playsound(user, unload_sound, 60, 1)
 		if(ammo_magazine.load_delay)
