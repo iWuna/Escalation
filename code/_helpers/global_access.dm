@@ -397,6 +397,8 @@
 			return global.default_pai_software;
 		if("defer_powernet_rebuild")
 			return global.defer_powernet_rebuild;
+		if("SSmobs")
+			return global.SSmobs;
 		if("deity")
 			return global.deity;
 		if("delta_index")
@@ -611,20 +613,6 @@
 			return global.light_overlay_cache;
 		if("lighter_sound")
 			return global.lighter_sound;
-		if("lighting_overlays_initialised")
-			return global.lighting_overlays_initialised;
-		if("lighting_update_corners")
-			return global.lighting_update_corners;
-		if("lighting_update_corners_old")
-			return global.lighting_update_corners_old;
-		if("lighting_update_lights")
-			return global.lighting_update_lights;
-		if("lighting_update_lights_old")
-			return global.lighting_update_lights_old;
-		if("lighting_update_overlays")
-			return global.lighting_update_overlays;
-		if("lighting_update_overlays_old")
-			return global.lighting_update_overlays_old;
 		if("limb_icon_cache")
 			return global.limb_icon_cache;
 		if("list_of_ais")
@@ -647,8 +635,6 @@
 			return global.lunchables_lunches_;
 		if("lunchables_snacks_")
 			return global.lunchables_snacks_;
-		if("machinery_sort_required")
-			return global.machinery_sort_required;
 		if("magazine_icondata_keys")
 			return global.magazine_icondata_keys;
 		if("magazine_icondata_states")
@@ -1276,6 +1262,8 @@
 			global.TELEBLOCK=newval;
 		if("TWITCHBLOCK")
 			global.TWITCHBLOCK=newval;
+		if("SSmobs")
+			global.SSmobs=newval;
 		if("Tier1Runes")
 			global.Tier1Runes=newval;
 		if("Tier2Runes")
@@ -1772,20 +1760,6 @@
 			global.license_to_url=newval;
 		if("lighter_sound")
 			global.lighter_sound=newval;
-		if("lighting_overlays_initialised")
-			global.lighting_overlays_initialised=newval;
-		if("lighting_update_corners")
-			global.lighting_update_corners=newval;
-		if("lighting_update_corners_old")
-			global.lighting_update_corners_old=newval;
-		if("lighting_update_lights")
-			global.lighting_update_lights=newval;
-		if("lighting_update_lights_old")
-			global.lighting_update_lights_old=newval;
-		if("lighting_update_overlays")
-			global.lighting_update_overlays=newval;
-		if("lighting_update_overlays_old")
-			global.lighting_update_overlays_old=newval;
 		if("limb_icon_cache")
 			global.limb_icon_cache=newval;
 		if("list_of_ais")
@@ -1809,7 +1783,6 @@
 		if("lunchables_snacks_")
 			global.lunchables_snacks_=newval;
 		if("machinery_sort_required")
-			global.machinery_sort_required=newval;
 		if("magazine_icondata_keys")
 			global.magazine_icondata_keys=newval;
 		if("magazine_icondata_states")
@@ -2586,6 +2559,7 @@
 	"fusion_reactions",
 	"game_id",
 	"game_version",
+	"SSmobs",
 	"game_year",
 	"gamemode_cache",
 	"gas_data",

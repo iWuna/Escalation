@@ -33,8 +33,6 @@ SUBSYSTEM_DEF(garbage)
 	var/list/qdel_list = list()	// list of all types that have been qdel()eted
 #endif
 
-/datum/var/list/active_timers  //for SStimer
-
 /datum/controller/subsystem/garbage/stat_entry()
 	var/msg = list()
 	msg += "Q:[queue.len]|TD:[totaldels]|TG:[totalgcs]|TGR:"
@@ -253,8 +251,6 @@ SUBSYSTEM_DEF(garbage)
 			continue
 		qdel(timer)
 	return QDEL_HINT_QUEUE
-
-/datum/var/gc_destroyed //Time when this object was destroyed.
 
 #ifdef TESTING
 /datum/var/running_find_references
