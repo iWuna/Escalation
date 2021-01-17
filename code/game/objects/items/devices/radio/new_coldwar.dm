@@ -9,7 +9,6 @@
 	w_class = ITEM_SIZE_LARGE
 	action_button_name = "Remove/Replace Headset"
 
-
 	var/obj/item/device/radio/escalation/radio
 
 /obj/item/weapon/radioset/New() //starts without a cell for rnd
@@ -170,6 +169,8 @@ var/global/list/army_channels_ph = list(
 	item_state = "prc77-receiver"
 	frequency = 1351
 	slot_flags = SLOT_EARS
+
+
 
 /obj/item/weapon/radioset/prc77
 	name = "PRC-77"

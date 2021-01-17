@@ -21,11 +21,10 @@ var/global/list/army_channels_ph = list(
 	name = "R-105D headset"
 	icon_state = "warpact_radio"
 	item_state = "warpact_radio"
-	frequency = 1545
+	frequency = 1449
 
 /obj/item/device/radio/escalation/nato
 	name = "AN/PRC-77 receiver"
 	icon_state = "prc77-receiver"
 	item_state = "prc77-receiver"
-	frequency = 1256
-
+	frequency = 1351
