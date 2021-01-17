@@ -76,11 +76,11 @@
 /proc/check_player_in_whitelist(var/key, var/rank)
 	var/ckey = ckey(key)
 	if(!ckey)
-		return 0
+		return 1
 
 	var/list/aviable_roles = whitelisted_escalation[ckey]
 	if(!length(aviable_roles))
-		return 0
+		return 1
 
 	if("::ALL::" in aviable_roles)
 		return 1
