@@ -6,12 +6,12 @@
 
 # STAFF
 
-severepwnage = {
+darkestwolf = {
 ::ALL::
 a
 }
 
-emoats18 = {
+iwuna = {
 ::ALL::
 }
 
