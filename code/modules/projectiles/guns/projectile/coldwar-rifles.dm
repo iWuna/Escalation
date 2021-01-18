@@ -301,24 +301,23 @@
 		icon_state = "ak74gl-empty"
 		wielded_item_state = "ak74gl-wielded-empty"
 
-
-/obj/item/weapon/gun/projectile/automatic/rifle/ak74gl/verb/set_gp(mob/user)
+/obj/item/weapon/gun/projectile/automatic/rifle/ak74gl/verb/set_gp()
 	set name = "Grenade Launcher"
 	set category = "Object"
 	set src in usr
 
-	if(user.get_active_hand() == src)
+	if(usr.get_active_hand() == src)
 		if(launcher)
 			use_launcher = !use_launcher
 			if(do_after(usr, 1, src))
 				to_chat(usr, "<span class='notice'>You [use_launcher ? "prepare the [launcher.name]." : " take your gun back."]</span>")
 				if (use_launcher)
-					user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
+					usr.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
 				else
-					user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+					usr.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
 				playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
 	else
-		to_chat(user, "\red You should be holding weapon in active hand to do this!")
+		to_chat(usr, "\red You should be holding weapon in active hand to do this!")
 
 /obj/item/weapon/gun/projectile/automatic/rifle/ak74gl/pickup(mob/user)
 	..()
