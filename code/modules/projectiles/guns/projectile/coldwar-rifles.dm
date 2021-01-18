@@ -302,16 +302,32 @@
 		wielded_item_state = "ak74gl-wielded-empty"
 
 
-/obj/item/weapon/gun/projectile/automatic/rifle/ak74gl/verb/set_gp()
+/obj/item/weapon/gun/projectile/automatic/rifle/ak74gl/verb/set_gp(mob/user)
 	set name = "Grenade Launcher"
 	set category = "Object"
 	set src in usr
 
-	if(launcher)
-		use_launcher = !use_launcher
-		if(do_after(usr, 1, src))
-			to_chat(usr, "<span class='notice'>You [use_launcher ? "prepare the [launcher.name]." : " take your gun back."]</span>")
-			playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
+	if(user.get_active_hand() == src)
+		if(launcher)
+			use_launcher = !use_launcher
+			if(do_after(usr, 1, src))
+				to_chat(usr, "<span class='notice'>You [use_launcher ? "prepare the [launcher.name]." : " take your gun back."]</span>")
+				if (use_launcher)
+					user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
+				else
+					user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+				playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
+	else
+		to_chat(user, "\red You should be holding weapon in active hand to do this!")
+
+/obj/item/weapon/gun/projectile/automatic/rifle/ak74gl/pickup(mob/user)
+	..()
+	if(!safety)
+		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+		if (use_launcher)
+			spawn(1)
+				user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
+
 
 /obj/item/weapon/gun/projectile/automatic/rifle/m16a2
 	name = "M16A2"
@@ -544,17 +560,32 @@
 		icon_state = "m16a1gl-empty"
 		wielded_item_state = "m16gl-wielded-empty"
 
-/obj/item/weapon/gun/projectile/automatic/rifle/m16a1gl/verb/set_gp()
+/obj/item/weapon/gun/projectile/automatic/rifle/m16a1gl/verb/set_gp(mob/user)
 	set name = "Grenade Launcher"
 	set category = "Object"
 	set src in usr
 	set popup_menu = 1
 
-	if(launcher)
-		use_launcher = !use_launcher
-		if(do_after(usr, 1, src))
-			to_chat(usr, "<span class='notice'>You [use_launcher ? "prepare the [launcher.name]." : " take your gun back."]</span>")
-			playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
+	if(user.get_active_hand() == src)
+		if(launcher)
+			use_launcher = !use_launcher
+			if(do_after(usr, 1, src))
+				to_chat(usr, "<span class='notice'>You [use_launcher ? "prepare the [launcher.name]." : " take your gun back."]</span>")
+				if (use_launcher)
+					user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
+				else
+					user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+				playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
+	else
+		to_chat(user, "\red You should be holding weapon in active hand to do this!")
+
+/obj/item/weapon/gun/projectile/automatic/rifle/m16a1gl/pickup(mob/user)
+	..()
+	if(!safety)
+		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+		if (use_launcher)
+			spawn(1)
+				user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
 
 
 /obj/item/weapon/gun/projectile/automatic/rifle/g3a3
@@ -722,17 +753,32 @@
 		icon_state = "g3tgs-empty"
 		wielded_item_state = "g3tgs-wielded-empty"
 
-/obj/item/weapon/gun/projectile/automatic/rifle/g3tgs/verb/set_gp()
+/obj/item/weapon/gun/projectile/automatic/rifle/g3tgs/verb/set_gp(mob/user)
 	set name = "Grenade Launcher"
 	set category = "Object"
 	set src in usr
 	set popup_menu = 1
 
-	if(launcher)
-		use_launcher = !use_launcher
-		if(do_after(usr, 1, src))
-			to_chat(usr, "<span class='notice'>You [use_launcher ? "prepare the [launcher.name]." : " take your gun back."]</span>")
-			playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
+	if(user.get_active_hand() == src)
+		if(launcher)
+			use_launcher = !use_launcher
+			if(do_after(usr, 1, src))
+				to_chat(usr, "<span class='notice'>You [use_launcher ? "prepare the [launcher.name]." : " take your gun back."]</span>")
+				if (use_launcher)
+					user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
+				else
+					user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+				playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
+	else
+		to_chat(user, "\red You should be holding weapon in active hand to do this!")
+
+/obj/item/weapon/gun/projectile/automatic/rifle/g3tgs/pickup(mob/user)
+	..()
+	if(!safety)
+		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+		if (use_launcher)
+			spawn(1)
+				user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
 
 /obj/item/weapon/gun/projectile/automatic/rifle/vz58 //Don't Use
 	name = "Vz.58"
@@ -848,16 +894,32 @@
 	else
 		icon_state = "vz58gl-empty"
 
-/obj/item/weapon/gun/projectile/automatic/rifle/vz58gl/verb/set_gp()
+/obj/item/weapon/gun/projectile/automatic/rifle/vz58gl/verb/set_gp(mob/user)
 	set name = "Grenade launcher"
 	set category = "Object"
 	set src in usr
 	set popup_menu = 0
 
-	if(launcher)
-		use_launcher = !use_launcher
-		if(do_after(usr, 1, src))
-			to_chat(usr, "<span class='notice'>You [use_launcher ? "prepare the [launcher.name]." : " take your gun back."]</span>")
+	if(user.get_active_hand() == src)
+		if(launcher)
+			use_launcher = !use_launcher
+			if(do_after(usr, 1, src))
+				to_chat(usr, "<span class='notice'>You [use_launcher ? "prepare the [launcher.name]." : " take your gun back."]</span>")
+				if (use_launcher)
+					user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
+				else
+					user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+				playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
+	else
+		to_chat(user, "\red You should be holding weapon in active hand to do this!")
+
+/obj/item/weapon/gun/projectile/automatic/rifle/vz58gl/pickup(mob/user)
+	..()
+	if(!safety)
+		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+		if (use_launcher)
+			spawn(1)
+				user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
 
 /obj/item/weapon/gun/projectile/automatic/rifle/mpikm
 	name = "MPi-KM"
@@ -1049,16 +1111,31 @@
 		..()
 
 
-/obj/item/weapon/gun/projectile/automatic/rifle/mpikmgl/verb/set_gp()
+/obj/item/weapon/gun/projectile/automatic/rifle/mpikmgl/verb/set_gp(mob/user)
 	set name = "Grenade Launcher"
 	set category = "Object"
 	set src in usr
 
-	if(launcher)
-		use_launcher = !use_launcher
-		if(do_after(usr, 1, src))
-			to_chat(usr, "<span class='notice'>You [use_launcher ? "prepare the [launcher.name]." : " take your gun back."]</span>")
-			playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
+	if(user.get_active_hand() == src)
+		if(launcher)
+			use_launcher = !use_launcher
+			if(do_after(usr, 1, src))
+				to_chat(usr, "<span class='notice'>You [use_launcher ? "prepare the [launcher.name]." : " take your gun back."]</span>")
+				if (use_launcher)
+					user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
+				else
+					user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+				playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
+	else
+		to_chat(user, "\red You should be holding weapon in active hand to do this!")
+
+/obj/item/weapon/gun/projectile/automatic/rifle/mpikmgl/pickup(mob/user)
+	..()
+	if(!safety)
+		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+		if (use_launcher)
+			spawn(1)
+				user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
 
 /obj/item/weapon/gun/projectile/automatic/rifle/mpiak74n
 	name = "MPi-AK-74N"
@@ -1172,16 +1249,31 @@
 		wielded_item_state = "ak74gl-wielded-empty"
 
 
-/obj/item/weapon/gun/projectile/automatic/rifle/mpiak74gl/verb/set_gp()
+/obj/item/weapon/gun/projectile/automatic/rifle/mpiak74gl/verb/set_gp(mob/user)
 	set name = "Grenade Launcher"
 	set category = "Object"
 	set src in usr
 
-	if(launcher)
-		use_launcher = !use_launcher
-		if(do_after(usr, 1, src))
-			to_chat(usr, "<span class='notice'>You [use_launcher ? "prepare the [launcher.name]." : " take your gun back."]</span>")
-			playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
+	if(user.get_active_hand() == src)
+		if(launcher)
+			use_launcher = !use_launcher
+			if(do_after(usr, 1, src))
+				to_chat(usr, "<span class='notice'>You [use_launcher ? "prepare the [launcher.name]." : " take your gun back."]</span>")
+				if (use_launcher)
+					user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
+				else
+					user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+				playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
+	else
+		to_chat(user, "\red You should be holding weapon in active hand to do this!")
+
+/obj/item/weapon/gun/projectile/automatic/rifle/mpiak74gl/pickup(mob/user)
+	..()
+	if(!safety)
+		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+		if (use_launcher)
+			spawn(1)
+				user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
 
 /obj/item/weapon/gun/projectile/automatic/rifle/mpiaks74n
 	name = "MPi-AKS-74N"
