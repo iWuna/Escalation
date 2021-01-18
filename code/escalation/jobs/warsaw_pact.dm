@@ -10,7 +10,7 @@
 
 /datum/job/escalation/cccp/saplatlead
 	title = "SA Komandir Vzvoda"
-	name = "Komandir Vzvoda"
+	name = "SA Komandir Vzvoda"
 	english_name = "Platoon Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -31,7 +31,7 @@
 
 /datum/job/escalation/cccp/saplatleaddep
 	title = "SA Zamestitel Komandira Vzvoda"
-	name = "Zamestitel Komandira Vzvoda"
+	name = "SA Zamestitel Komandira Vzvoda"
 	english_name = "Platoon Leader Deputy"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -51,7 +51,7 @@
 
 /datum/job/escalation/cccp/sazampolit
 	title = "SA Zampolit"
-	name = "Zampolit"
+	name = "SA Zampolit"
 	english_name = "Political Commisar"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -71,7 +71,7 @@
 
 /datum/job/escalation/cccp/sastarshina
 	title = "SA Starshina"
-	name = "Starshina"
+	name = "SA Starshina"
 	english_name = "Quartermaster"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -91,7 +91,7 @@
 
 /datum/job/escalation/cccp/saplmg
 	title = "SA Vzvodny Pulemetchik"
-	name = "Vzvodny Pulemetchik"
+	name = "SA Vzvodny Pulemetchik"
 	english_name = "Platoon Machinegunner"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -111,7 +111,7 @@
 
 /datum/job/escalation/cccp/saplmgas
 	title = "SA Pomoshnik Vzvodnogo Pulemetchika"
-	name = "Pomoshnik Vzvodnogo Pulemetchika"
+	name = "SA Pomoshnik Vzvodnogo Pulemetchika"
 	english_name = "Platoon Machinegunner Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -131,7 +131,7 @@
 
 /datum/job/escalation/cccp/saratelo
 	title = "SA Shtabnoi Radiotelefonist"
-	name = "Shtabnoi Radiotelefonist"
+	name = "SA Shtabnoi Radiotelefonist"
 	english_name = "HQ Radio Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -151,7 +151,7 @@
 
 /datum/job/escalation/cccp/sacorpsman
 	title = "SA Sanitar"
-	name = "Sanitar"
+	name = "SA Sanitar"
 	english_name = "Field Medic"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -171,7 +171,7 @@
 
 /datum/job/escalation/cccp/sasurgerist
 	title = "SA Polevoi Vrach"
-	name = "Polevoi Vrach"
+	name = "SA Polevoi Vrach"
 	english_name = "Field Surgeon"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -191,7 +191,7 @@
 
 /datum/job/escalation/cccp/sasniper
 	title = "SA Snaiper"
-	name = "Snaiper"
+	name = "SA Snaiper"
 	english_name = "Sniper"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -211,7 +211,7 @@
 
 /datum/job/escalation/cccp/sasl
 	title = "SA Komandir Otdeleniya"
-	name = "Komandir Otdeleniya"
+	name = "SA Komandir Otdeleniya"
 	english_name = "Squad Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -232,7 +232,7 @@
 
 /datum/job/escalation/cccp/sasld
 	title = "SA Zamestitel Komandira Otdeleniya"
-	name = "Zamestitel Komandira Otdeleniya"
+	name = "SA Zamestitel Komandira Otdeleniya"
 	english_name = "Squad Leader Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -252,7 +252,7 @@
 
 /datum/job/escalation/cccp/samg
 	title = "SA Pulemetchik"
-	name = "Pulemetchik"
+	name = "SA Pulemetchik"
 	english_name = "Machinegunner"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -272,7 +272,7 @@
 
 /datum/job/escalation/cccp/samgas
 	title = "SA Pomoshnik Pulemetchika"
-	name = "Pomoshnik Pulemetchika"
+	name = "SA Pomoshnik Pulemetchika"
 	english_name = "Machinegunner Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -292,7 +292,7 @@
 
 /datum/job/escalation/cccp/sasrad
 	title = "SA Radiotelefonist"
-	name = "Radiotelefonist"
+	name = "SA Radiotelefonist"
 	english_name = "Radiotelephone Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -312,7 +312,7 @@
 
 /datum/job/escalation/cccp/sagrenat
 	title = "SA Strelok-Granatometchik"
-	name = "Strelok-Granatometchik (AT)"
+	name = "SA Strelok-Granatometchik (AT)"
 	english_name = "Squad Grenadier"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -332,7 +332,7 @@
 
 /datum/job/escalation/cccp/sagrengl
 	title = "SA Strelok-Granatometchik"
-	name = "Strelok-Granatometchik (GL)"
+	name = "SA Strelok-Granatometchik (GL)"
 	english_name = "Squad Grenadier"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -352,7 +352,7 @@
 
 /datum/job/escalation/cccp/sarocketass
 	title = "SA Pomoshnik Granatometchika"
-	name = "Pomoshnik Granatometchika"
+	name = "SA Pomoshnik Granatometchika"
 	english_name = "Squad Grenadier Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -372,7 +372,7 @@
 
 /datum/job/escalation/cccp/sarifle
 	title = "SA Strelok"
-	name = "Strelok"
+	name = "SA Strelok"
 	english_name = "Rifleman"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -392,7 +392,7 @@
 
 /datum/job/escalation/cccp/saatrifle
 	title = "SA LAT Strelok"
-	name = "Strelok (LAT)"
+	name = "SA Strelok (LAT)"
 	english_name = "Rifleman"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -414,7 +414,7 @@
 
 /datum/job/escalation/cccp/saotvco
 	title = "SA OTV Komandir"
-	name = "OTV Komandir"
+	name = "SA OTV Komandir"
 	english_name = "Heavy Weapons Commander"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -435,7 +435,7 @@
 
 /datum/job/escalation/cccp/saotvop
 	title = "SA OTV Operator"
-	name = "OTV Operator"
+	name = "SA OTV Operator"
 	english_name = "Heavy Weapons Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -456,7 +456,7 @@
 
 /datum/job/escalation/cccp/saotvload
 	title = "SA OTV Zaryazhaiuschiy"
-	name = "OTV Zaryazhaiuschiy"
+	name = "SA OTV Zaryazhaiuschiy"
 	english_name = "Heavy Weapons Loader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -489,7 +489,7 @@
 
 /datum/job/escalation/nvaddr/nvaplatlead
 	title = "NVA Zugfuhrer"
-	name = "Zugfuhrer"
+	name = "NVA Zugfuhrer"
 	english_name = "Platoon Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -511,7 +511,7 @@
 
 /datum/job/escalation/nvaddr/nvaplatleaddep
 	title = "NVA Zugfuhrerassistant"
-	name = "Zugfuhrerassistant"
+	name = "NVA Zugfuhrerassistant"
 	english_name = "Platoon Leader Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -531,7 +531,7 @@
 
 /datum/job/escalation/nvaddr/politoffizier
 	title = "NVA Politoffizier"
-	name = "Politoffizier"
+	name = "NVA Politoffizier"
 	english_name = "Political Commisar"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -552,7 +552,7 @@
 
 /datum/job/escalation/nvaddr/nvakapt
 	title = "NVA Entfuhrer"
-	name = "Entfuhrer"
+	name = "NVA Entfuhrer"
 	english_name = "Quartermaster"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -572,7 +572,7 @@
 
 /datum/job/escalation/nvaddr/platnvamg
 	title = "NVA Zug Machinengewehrschutze"
-	name = "Machinengewehrschutze"
+	name = "NVA Machinengewehrschutze"
 	english_name = "Platoon Machinegunner"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -592,7 +592,7 @@
 
 /datum/job/escalation/nvaddr/platnvamgas
 	title = "NVA Zug Machinengewehrschutze Stellvertretender"
-	name = "Machinengewehrschutze Stellvertretender"
+	name = "NVA Machinengewehrschutze Stellvertretender"
 	english_name = "Platoon Machinegunner Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -612,7 +612,7 @@
 
 /datum/job/escalation/nvaddr/nvarad
 	title = "NVA Funktelefonbetreiber"
-	name = "Funktelefonbetreiber"
+	name = "NVA Funktelefonbetreiber"
 	english_name = "HQ Radio Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -632,7 +632,7 @@
 
 /datum/job/escalation/nvaddr/nvacorpsman
 	title = "NVA Sanitater"
-	name = "Sanitater"
+	name = "NVA Sanitater"
 	english_name = "Field Medic"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -652,7 +652,7 @@
 
 /datum/job/escalation/nvaddr/nvasurgerist
 	title = "NVA Feldchirurg"
-	name = "Feldchirurg"
+	name = "NVA Feldchirurg"
 	english_name = "Field Surgeon"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -672,7 +672,7 @@
 
 /datum/job/escalation/nvaddr/nvasm
 	title = "NVA Scharfschutze"
-	name = "Scharfschutze"
+	name = "NVA Scharfschutze"
 	english_name = "Designated Marksman"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -692,7 +692,7 @@
 
 /datum/job/escalation/nvaddr/nvasl
 	title = "NVA Gruppenfuhrer"
-	name = "Gruppenfuhrer"
+	name = "NVA Gruppenfuhrer"
 	english_name = "Squad Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -713,7 +713,7 @@
 
 /datum/job/escalation/nvaddr/nvasld
 	title = "NVA Gruppenfuhrer Stellvertretender"
-	name = "Gruppenfuhrer Stellvertretender"
+	name = "NVA Gruppenfuhrer Stellvertretender"
 	english_name = "Squad Leader Deputy"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -734,7 +734,7 @@
 
 /datum/job/escalation/nvaddr/nvamg
 	title = "NVA Machinengewehrschutze"
-	name = "Machinengewehrschutze"
+	name = "NVA Machinengewehrschutze"
 	english_name = "Machinegunner"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -754,7 +754,7 @@
 
 /datum/job/escalation/nvaddr/nvamgas
 	title = "NVA Machinengewehrschutze Stellvertretender"
-	name = "Machinengewehrschutze Stellvertretender"
+	name = "NVA Machinengewehrschutze Stellvertretender"
 	english_name = "Machinegunner Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -774,7 +774,7 @@
 
 /datum/job/escalation/nvaddr/nvasrad
 	title = "NVA Funke"
-	name = "Funke"
+	name = "NVA Funke"
 	english_name = "Squad Radio Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -794,7 +794,7 @@
 
 /datum/job/escalation/nvaddr/nvagrenat
 	title = "NVA Panzerabwehrschutze"
-	name = "Panzerabwehrschutze"
+	name = "NVA Panzerabwehrschutze"
 	english_name = "Squad AT Trooper"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -814,7 +814,7 @@
 
 /datum/job/escalation/nvaddr/nvagrengl
 	title = "NVA Panzerabwehrschutze"
-	name = "Grenadierschutze"
+	name = "NVA Grenadierschutze"
 	english_name = "Squad Grenadier"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -834,7 +834,7 @@
 
 /datum/job/escalation/nvaddr/nvarocketass
 	title = "NVA Panzerabwerschutze Stellvertretender"
-	name = "Panzerabwerschutze Stellvert."
+	name = "NVA Panzerabwerschutze Stellvert."
 	english_name = "Grenadier Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -854,7 +854,7 @@
 
 /datum/job/escalation/nvaddr/nvarifle
 	title = "NVA Schutze"
-	name = "Schutze"
+	name = "NVA Schutze"
 	english_name = "Rifleman"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -874,7 +874,7 @@
 
 /datum/job/escalation/nvaddr/nvaatrifle
 	title = "NVA LAT Schutze"
-	name = "Schutze (LAT)"
+	name = "NVA Schutze (LAT)"
 	english_name = "Rifleman"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -894,7 +894,7 @@
 
 /datum/job/escalation/nvaddr/mgcom
 	title = "NVA HWS Commander"
-	name = "Schwere Waffen Gruppenfuhrer"
+	name = "NVA Schwere Waffen Gruppenfuhrer"
 	english_name = "Heavy Weapons Section Commander"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -913,7 +913,7 @@
 
 /datum/job/escalation/nvaddr/mgload
 	title = "NVA HWS Loader"
-	name = "Schwere Waffen Gruppe Ladeschutze"
+	name = "NVA Schwere Waffen Gruppe Ladeschutze"
 	english_name = "Heavy Weapons Section Loader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -932,7 +932,7 @@
 
 /datum/job/escalation/nvaddr/mgop
 	title = "NVA HWS Operator"
-	name = "Schwere Waffen Gruppe Schutze"
+	name = "NVA Schwere Waffen Gruppe Schutze"
 	english_name = "Heavy Weapons Section Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -964,7 +964,7 @@
 
 /datum/job/escalation/finn/finnplatlead
 	title = "FINN Luutnantti"
-	name = "Luutnantti"
+	name = "FINN Luutnantti"
 	english_name = "Platoon Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -986,7 +986,7 @@
 
 /datum/job/escalation/finn/finnplatleaddep
 	title = "FINN Ylikersantti"
-	name = "Ylikersantti"
+	name = "FINN Ylikersantti"
 	english_name = "Platoon Leader Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1008,7 +1008,7 @@
 
 /datum/job/escalation/finn/finnmajoitusmestari
 	title = "FINN Majoitusmestari"
-	name = "Majoitusmestari"
+	name = "FINN Majoitusmestari"
 	english_name = "Quartermaster"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1028,7 +1028,7 @@
 
 /datum/job/escalation/finn/platfinnmg
 	title = "FINN Joukkue Finnmajoitusmestari"
-	name = "Finnmajoitusmestari"
+	name = "FINN Finnmajoitusmestari"
 	english_name = "Platoon Machinegunner"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1048,7 +1048,7 @@
 
 /datum/job/escalation/finn/platfinnmgas
 	title = "FINN Joukkue Finnmajoitusmestari Sotamies"
-	name = "Finnmajoitusmestari Sotamies"
+	name = "FINN Finnmajoitusmestari Sotamies"
 	english_name = "Platoon Machinegunner Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1069,7 +1069,7 @@
 
 /datum/job/escalation/finn/finnratelo
 	title = "FINN Alikersantti"
-	name = "Alikersantti"
+	name = "FINN Alikersantti"
 	english_name = "Platoon RTO"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1089,7 +1089,7 @@
 
 /datum/job/escalation/finn/finncorpsman
 	title = "FINN Medisiinari"
-	name = "Medisiinari"
+	name = "FINN Medisiinari"
 	english_name = "Field Medic"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1109,7 +1109,7 @@
 
 /datum/job/escalation/finn/finnsurgerist
 	title = "FINN Kenttakirurg"
-	name = "Kenttakirurg"
+	name = "FINN Kenttakirurg"
 	english_name = "Field Surgeon"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1129,7 +1129,7 @@
 
 /datum/job/escalation/finn/finnsm
 	title = "FINN Tarkka-ampuja"
-	name = "Tarkka-ampuja"
+	name = "FINN Tarkka-ampuja"
 	english_name = "Designated Marksman"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1149,7 +1149,7 @@
 
 /datum/job/escalation/finn/finnsl
 	title = "FINN Ryhmanjohtaja"
-	name = "Ryhmanjohtaja"
+	name = "FINN Ryhmanjohtaja"
 	english_name = "Squad Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1170,7 +1170,7 @@
 
 /datum/job/escalation/finn/finnsld
 	title = "FINN Ryhmanjohtaja Jasen"
-	name = "Ryhmanjohtaja Jasen"
+	name = "FINN Ryhmanjohtaja Jasen"
 	english_name = "Squad Leader Deputy"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1191,7 +1191,7 @@
 
 /datum/job/escalation/finn/finnmg
 	title = "FINN Konekivaari"
-	name = "Konekivaari"
+	name = "FINN Konekivaari"
 	english_name = "Machinegunner"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1211,7 +1211,7 @@
 
 /datum/job/escalation/finn/finnmgas
 	title = "FINN Konekivaari-assistentti"
-	name = "Konekivaari-assistentti"
+	name = "FINN Konekivaari-assistentti"
 	english_name = "Machinegunner Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1231,7 +1231,7 @@
 
 /datum/job/escalation/finn/finnsrad
 	title = "FINN Puhelinoperaattori"
-	name = "Puhelinoperaattori"
+	name = "FINN Puhelinoperaattori"
 	english_name = "Squad Radio Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1251,7 +1251,7 @@
 
 /datum/job/escalation/finn/finnrifle
 	title = "FINN Kivarimies"
-	name = "Kivaarimies"
+	name = "FINN Kivaarimies"
 	english_name = "Rifleman"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1272,7 +1272,7 @@
 
 /datum/job/escalation/finn/finnhwtlead
 	title = "FINN Raskasaseiden komentaja"
-	name = "Raskasaseiden komentaja"
+	name = "FINN Raskasaseiden komentaja"
 	english_name = "Heavy Weapons Commander"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1293,7 +1293,7 @@
 
 /datum/job/escalation/finn/finnhwtgnr
 	title = "FINN Raskasaseiden ampuja"
-	name = "Raskasaseiden ampuja"
+	name = "FINN Raskasaseiden ampuja"
 	english_name = "Heavy Weapons Gunner"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1314,7 +1314,7 @@
 
 /datum/job/escalation/finn/finnhwtload
 	title = "FINN Raskasaseiden kuormaaja"
-	name = "Raskasaseiden kuormaaja"
+	name = "FINN Raskasaseiden kuormaaja"
 	english_name = "Heavy Weapons Loader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1334,7 +1334,7 @@
 
 /datum/job/escalation/finn/finnrocketlead
 	title = "FINN Panssarintorjunta Ryhmanjohtaja"
-	name = "Panssarintorjunta Ryhmanjohtaja"
+	name = "FINN Panssarintorjunta Ryhmanjohtaja"
 	english_name = "Anti-Tank Patrol Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1354,7 +1354,7 @@
 
 /datum/job/escalation/finn/finnrocket
 	title = "FINN Panssarintorjunta ampuja"
-	name = "Panssarintorjunta ampuja"
+	name = "FINN Panssarintorjunta ampuja"
 	english_name = "AT Patrol Grenadier"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1374,7 +1374,7 @@
 
 /datum/job/escalation/finn/finnrocketass
 	title = "FINN AT ampuja assistentti "
-	name = "AT ampuja assistentti"
+	name = "FINN AT ampuja assistentti"
 	english_name = "Grenadier Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5

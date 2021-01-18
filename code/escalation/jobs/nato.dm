@@ -11,7 +11,7 @@
 
 /datum/job/escalation/usmc/usmcplatlead
 	title = "USMC Platoon Leader"
-	name = "Platoon Leader"
+	name = "USMC Platoon Leader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -32,7 +32,7 @@
 
 /datum/job/escalation/usmc/usmcplatleaddep
 	title = "USMC Platoon Leader Deputy"
-	name = "Platoon Leader Deputy"
+	name = "USMC Platoon Leader Deputy"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -52,7 +52,7 @@
 
 /datum/job/escalation/usmc/usmcratelo
 	title = "USMC Radiotelephone Operator"
-	name = "Radiotelephone Operator"
+	name = "USMC Radiotelephone Operator"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -72,7 +72,7 @@
 
 /datum/job/escalation/usmc/messenger
 	title = "USMC Messenger"
-	name = "Messenger"
+	name = "USMC Messenger"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -92,7 +92,7 @@
 
 /datum/job/escalation/usmc/usmccorpsman
 	title = "USMC Field Medic"
-	name = "Squad Medic"
+	name = "USMC Squad Medic"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -111,7 +111,7 @@
 
 /datum/job/escalation/usmc/usmcsurgerist
 	title = "USMC Field Surgeon"
-	name = "Field Surgeon"
+	name = "USMC Field Surgeon"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -130,7 +130,7 @@
 
 /datum/job/escalation/usmc/usmcmarksman
 	title = "USMC Designated Marksman"
-	name = "Designated Marksman"
+	name = "USMC Designated Marksman"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -149,7 +149,7 @@
 
 /datum/job/escalation/usmc/usmcquartermaster
 	title = "USMC Quartermaster"
-	name = "Quartermaster"
+	name = "USMC Quartermaster"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -167,7 +167,7 @@
 
 /datum/job/escalation/usmc/usmcmgcom
 	title = "USMC HWS Commander"
-	name = "Heavy Weapon Section Commander"
+	name = "USMC Heavy Weapon Section Commander"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -186,7 +186,7 @@
 
 /datum/job/escalation/usmc/usmcmgload
 	title = "USMC HWS Loader"
-	name = "Heavy Weapon Loader"
+	name = "USMC Heavy Weapon Loader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -205,7 +205,7 @@
 
 /datum/job/escalation/usmc/usmcmgop
 	title = "USMC HWS Operator"
-	name = "Heavy Weapon Operator"
+	name = "USMC Heavy Weapon Operator"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -224,7 +224,7 @@
 
 /datum/job/escalation/usmc/usmcsl
 	title = "USMC Squad Leader"
-	name = "Squad Leader"
+	name = "USMC Squad Leader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -244,7 +244,7 @@
 
 /datum/job/escalation/usmc/usmcftl
 	title = "USMC Fireteam Leader"
-	name = "Fireteam Leader"
+	name = "USMC Fireteam Leader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -266,7 +266,7 @@
 
 /datum/job/escalation/usmc/usmcfto
 	title = "USMC Rifleman"
-	name = "Fireteam Rifleman"
+	name = "USMC Fireteam Rifleman"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -286,7 +286,7 @@
 
 /datum/job/escalation/usmc/usmcftlat
 	title = "USMC LAT Rifleman"
-	name = "Fireteam Rifleman (LAT)"
+	name = "USMC Fireteam Rifleman (LAT)"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -306,7 +306,7 @@
 
 /datum/job/escalation/usmc/usmcftmg
 	title = "USMC Fireteam Machinegunner"
-	name = "Fireteam Machinegunner"
+	name = "USMC Fireteam Machinegunner"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -326,7 +326,7 @@
 
 /datum/job/escalation/usmc/usmcftg
 	title = "USMC Fireteam Grenadier"
-	name = "Fireteam Grenadier"
+	name = "USMC Fireteam Grenadier"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -346,7 +346,7 @@
 
 /datum/job/escalation/usmc/usmcftmga
 	title = "USMC Fireteam Machinegunner Assistant"
-	name = "Fireteam Machinegunner Assistant"
+	name = "USMC Fireteam Machinegunner Assistant"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -367,7 +367,7 @@
 
 /datum/job/escalation/usmc/usmcatcom
 	title = "USMC AT Commander"
-	name = "ATS Team Leader"
+	name = "USMC ATS Team Leader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -386,7 +386,7 @@
 
 /datum/job/escalation/usmc/usmcat
 	title = "USMC AT Gunner"
-	name = "ATS Gunner"
+	name = "USMC ATS Gunner"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -406,7 +406,7 @@
 
 /datum/job/escalation/usmc/usmcata
 	title = "USMC AT Asistant"
-	name = "ATS Assistant Rifleman"
+	name = "USMC ATS Assistant Rifleman"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -438,7 +438,7 @@
 
 /datum/job/escalation/bund/bdwplatlead
 	title = "BDW Zugfuhrer"
-	name = "Zugfuhrer"
+	name = "BDW Zugfuhrer"
 	english_name = "Platoon Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -459,7 +459,7 @@
 
 /datum/job/escalation/bund/bdwplatleaddep
 	title = "BDW Zugfuhrerassistant"
-	name = "Zugfuhrerassistant"
+	name = "BDW Zugfuhrerassistant"
 	english_name = "Platoon Leader Deputy"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -479,7 +479,7 @@
 
 /datum/job/escalation/bund/bdwratelo
 	title = "BDW Funktelefonbetreiber"
-	name = "Funktelefonbetreiber"
+	name = "BDW Funktelefonbetreiber"
 	english_name = "HQ Radioman"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -499,7 +499,7 @@
 
 /datum/job/escalation/bund/bdwmessenger
 	title = "BDW Bote"
-	name = "Bote"
+	name = "BDW Bote"
 	english_name = "Messenger"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -519,7 +519,7 @@
 
 /datum/job/escalation/bund/bdwcorpsman
 	title = "BDW Sanitaterschutze"
-	name = "Sanitaterschutze"
+	name = "BDW Sanitaterschutze"
 	english_name = "Field Medic"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -539,7 +539,7 @@
 
 /datum/job/escalation/bund/bdwsurgerist
 	title = "BDW Feldchirurg"
-	name = "Feldchirurg"
+	name = "BDW Feldchirurg"
 	english_name = "Field Surgeon"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -559,7 +559,7 @@
 
 /datum/job/escalation/bund/bdwsl
 	title = "BDW Gruppenfuhrer"
-	name = "Gruppenfuhrer"
+	name = "BDW Gruppenfuhrer"
 	english_name = "Squad Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -579,7 +579,7 @@
 
 /datum/job/escalation/bund/bdwsld
 	title = "BDW Gruppenfuhrer Stellvertretender"
-	name = "Gruppenfuhrer Stellvertretender"
+	name = "BDW Gruppenfuhrer Stellvertretender"
 	english_name = "Squad Leader Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -598,7 +598,7 @@
 
 /datum/job/escalation/bund/bdwsm
 	title = "BDW Scharfschutze"
-	name = "Scharfschutze"
+	name = "BDW Scharfschutze"
 	english_name = "Marksman"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -617,7 +617,7 @@
 
 /datum/job/escalation/bund/bdwmg
 	title = "BDW Machinengewehrschutze"
-	name = "Machinengewehrschutze"
+	name = "BDW Machinengewehrschutze"
 	english_name = "Machinegunner"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -636,7 +636,7 @@
 
 /datum/job/escalation/bund/bdwmgas
 	title = "BDW Machinengewehrschutze Stellvertretender"
-	name = "Machinengewehrschutze Stellvertretender"
+	name = "BDW Machinengewehrschutze Stellvertretender"
 	english_name = "Machinegunner Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -656,7 +656,7 @@
 
 /datum/job/escalation/bund/bdwgrenadier
 	title = "BDW Grenadier"
-	name = "Grenadierschutze"
+	name = "BDW Grenadierschutze"
 	english_name = "Grenadier"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -675,7 +675,7 @@
 
 /datum/job/escalation/bund/bdwsqradio
 	title = "BDW Squad Radio Operator"
-	name = "Gruppenfunker"
+	name = "BDW Gruppenfunker"
 	english_name = "Squad Radioman"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -694,7 +694,7 @@
 
 /datum/job/escalation/bund/bdwrifle
 	title = "BDW Schutze"
-	name = "Schutze"
+	name = "BDW Schutze"
 	english_name = "Rifleman"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -713,7 +713,7 @@
 
 /datum/job/escalation/bund/bdwatrifle
 	title = "BDW LAT Schutze"
-	name = "Schutze (LAT)"
+	name = "BDW Schutze (LAT)"
 	english_name = "Rifleman"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -733,7 +733,7 @@
 
 /datum/job/escalation/bund/mgcom
 	title = "BDW HWS Commander"
-	name = "Schwere Waffen Gruppenfuhrer"
+	name = "BDW Schwere Waffen Gruppenfuhrer"
 	english_name = "Heavy Weapons Section Commander"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -752,7 +752,7 @@
 
 /datum/job/escalation/bund/mgload
 	title = "BDW HWS Loader"
-	name = "Schwere Waffen Gruppe Ladeschutze"
+	name = "BDW Schwere Waffen Gruppe Ladeschutze"
 	english_name = "Heavy Weapons Section Loader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -771,7 +771,7 @@
 
 /datum/job/escalation/bund/mgop
 	title = "BDW HWS Operator"
-	name = "Schwere Waffen Gruppe Schutze"
+	name = "BDW Schwere Waffen Gruppe Schutze"
 	english_name = "Heavy Weapons Section Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -791,7 +791,7 @@
 
 /datum/job/escalation/bund/bdwatlead
 	title = "BDW AT Gruppenfuhrer"
-	name = "Panzerabwehrschutze Gruppenfuhrer"
+	name = "BDW Panzerabwehrschutze Gruppenfuhrer"
 	english_name = "AT Group Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -811,7 +811,7 @@
 
 /datum/job/escalation/bund/bdwatgun
 	title = "BDW Panzerfaustschutze"
-	name = "Panzerfaustschutze"
+	name = "BDW Panzerfaustschutze"
 	english_name = "AT Group Gunner"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -831,7 +831,7 @@
 
 /datum/job/escalation/bund/bdwatasst
 	title = "BDW Panzerfaustschutze Assistant"
-	name = "Panzerfaustschutze Stellvertretender"
+	name = "BDW Panzerfaustschutze Stellvertretender"
 	english_name = "AT Group Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -862,7 +862,7 @@
 
 /datum/job/escalation/baf/bafplatlead
 	title = "BAF Platoon Leader"
-	name = "Platoon Leader"
+	name = "BAF Platoon Leader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -883,7 +883,7 @@
 
 /datum/job/escalation/baf/bafplatleaddep
 	title = "BAF Platoon Leader Deputy"
-	name = "Platoon Leader Deputy"
+	name = "BAF Platoon Leader Deputy"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -903,7 +903,7 @@
 
 /datum/job/escalation/baf/bafratelo
 	title = "BAF Radiotelephone Operator"
-	name = "Radiotelephone Operator"
+	name = "BAF Radiotelephone Operator"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -924,7 +924,7 @@
 
 /datum/job/escalation/baf/bafmedic
 	title = "BAF Field Medic"
-	name = "Field Medic"
+	name = "BAF Field Medic"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -943,7 +943,7 @@
 
 /datum/job/escalation/baf/bafsurgeon
 	title = "BAF Field Surgeon"
-	name = "Field Surgeon"
+	name = "BAF Field Surgeon"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -962,7 +962,7 @@
 
 /datum/job/escalation/baf/bafmarksman
 	title = "BAF Designated Marksman"
-	name = "Designated Marksman"
+	name = "BAF Designated Marksman"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -981,7 +981,7 @@
 
 /datum/job/escalation/baf/bafsl
 	title = "BAF Squad Leader"
-	name = "Squad Leader"
+	name = "BAF Squad Leader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1001,7 +1001,7 @@
 
 /datum/job/escalation/baf/bafftl
 	title = "BAF Fireteam Leader"
-	name = "Fireteam Leader"
+	name = "BAF Fireteam Leader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1023,7 +1023,7 @@
 
 /datum/job/escalation/baf/baffto
 	title = "BAF Rifleman"
-	name = "Fireteam Rifleman"
+	name = "BAF Fireteam Rifleman"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1043,7 +1043,7 @@
 
 /datum/job/escalation/baf/bafat
 	title = "BAF AT Gunner"
-	name = "AT Gunner"
+	name = "BAF AT Gunner"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1063,7 +1063,7 @@
 
 /datum/job/escalation/baf/bafata
 	title = "BAF AT Asistant"
-	name = "AT Assistant Rifleman"
+	name = "BAF AT Assistant Rifleman"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1084,7 +1084,7 @@
 
 /datum/job/escalation/baf/bafftmg
 	title = "BAF Fireteam Machinegunner"
-	name = "Fireteam Machinegunner"
+	name = "BAF Fireteam Machinegunner"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1104,7 +1104,7 @@
 
 /datum/job/escalation/baf/bafftmga
 	title = "BAF Fireteam Machinegunner Assistant"
-	name = "Fireteam Machinegunner Assistant"
+	name = "BAF Fireteam Machinegunner Assistant"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1124,7 +1124,7 @@
 
 /datum/job/escalation/baf/bafmgcom
 	title = "BAF HWS Commander"
-	name = "Heavy Weapon Section Commander"
+	name = "BAF Heavy Weapon Section Commander"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1143,7 +1143,7 @@
 
 /datum/job/escalation/baf/bafmgload
 	title = "BAF HWS Loader"
-	name = "Heavy Weapon Loader"
+	name = "BAF Heavy Weapon Loader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1162,7 +1162,7 @@
 
 /datum/job/escalation/baf/bafmgop
 	title = "BAF HWS Operator"
-	name = "Heavy Weapon Operator"
+	name = "BAF Heavy Weapon Operator"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1191,7 +1191,7 @@
 
 /datum/job/escalation/usa/usaplatlead
 	title = "USA Platoon Leader"
-	name = "Platoon Leader"
+	name = "USA Platoon Leader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1212,7 +1212,7 @@
 
 /datum/job/escalation/usa/usaplatleaddep
 	title = "USA Platoon Leader Deputy"
-	name = "Platoon Leader Deputy"
+	name = "USA Platoon Leader Deputy"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1232,7 +1232,7 @@
 
 /datum/job/escalation/usa/usaratelo
 	title = "USA Radiotelephone Operator"
-	name = "Radiotelephone Operator"
+	name = "USA Radiotelephone Operator"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1252,7 +1252,7 @@
 
 /datum/job/escalation/usa/messenger
 	title = "USA Messenger"
-	name = "Messenger"
+	name = "USA Messenger"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1272,7 +1272,7 @@
 
 /datum/job/escalation/usa/usamedic
 	title = "USA Field Medic"
-	name = "Field Medic"
+	name = "USA Field Medic"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1291,7 +1291,7 @@
 
 /datum/job/escalation/usa/usasurgeon
 	title = "USA Field Surgeon"
-	name = "Field Surgeon"
+	name = "USA Field Surgeon"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1310,7 +1310,7 @@
 
 /datum/job/escalation/usa/usamarksman
 	title = "USA Designated Marksman"
-	name = "Designated Marksman"
+	name = "USA Designated Marksman"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1329,7 +1329,7 @@
 
 /datum/job/escalation/usa/usaquartermaster
 	title = "USA Quartermaster"
-	name = "Quartermaster"
+	name = "USA Quartermaster"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1347,7 +1347,7 @@
 
 /datum/job/escalation/usa/usasl
 	title = "USA Squad Leader"
-	name = "Squad Leader"
+	name = "USA Squad Leader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1367,7 +1367,7 @@
 
 /datum/job/escalation/usa/usaftl
 	title = "USA Fireteam Leader"
-	name = "Fireteam Leader"
+	name = "USA Fireteam Leader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1389,7 +1389,7 @@
 
 /datum/job/escalation/usa/usafto
 	title = "USA Rifleman"
-	name = "Fireteam Rifleman"
+	name = "USA Fireteam Rifleman"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1409,7 +1409,7 @@
 
 /datum/job/escalation/usa/usaftmg
 	title = "USA Fireteam Machinegunner"
-	name = "Fireteam Machinegunner"
+	name = "USA Fireteam Machinegunner"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1429,7 +1429,7 @@
 
 /datum/job/escalation/usa/usaftg
 	title = "USA Fireteam Grenadier"
-	name = "Fireteam Grenadier"
+	name = "USA Fireteam Grenadier"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1449,7 +1449,7 @@
 
 /datum/job/escalation/usa/usaftmga
 	title = "USA Fireteam Machinegunner Assistant"
-	name = "Fireteam Machinegunner Assistant"
+	name = "USA Fireteam Machinegunner Assistant"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1470,7 +1470,7 @@
 
 /datum/job/escalation/usa/usamgcom
 	title = "USA HWS Commander"
-	name = "Heavy Weapon Section Commander"
+	name = "USA Heavy Weapon Section Commander"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1489,7 +1489,7 @@
 
 /datum/job/escalation/usa/usamgload
 	title = "USA HWS Loader"
-	name = "Heavy Weapon Loader"
+	name = "USA Heavy Weapon Loader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1508,7 +1508,7 @@
 
 /datum/job/escalation/usa/usamgop
 	title = "USA HWS Operator"
-	name = "Heavy Weapon Operator"
+	name = "USA Heavy Weapon Operator"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1527,7 +1527,7 @@
 
 /datum/job/escalation/usa/usaatcom
 	title = "USA AT Commander"
-	name = "ATS Team Leader"
+	name = "USA ATS Team Leader"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1546,7 +1546,7 @@
 
 /datum/job/escalation/usa/usaat
 	title = "USA AT Gunner"
-	name = "ATS Gunner"
+	name = "USA ATS Gunner"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1566,7 +1566,7 @@
 
 /datum/job/escalation/usa/usaata
 	title = "USA AT Asistant"
-	name = "ATS Assistant Rifleman"
+	name = "USA ATS Assistant Rifleman"
 	english_name = null
 	minimal_player_age = 21
 	economic_modifier = 5
@@ -1583,4 +1583,3 @@
 	equip(var/mob/living/carbon/human/H)
 		..()
 		H.add_skills(0, 0, -1, -1, 0, 1, 0, 0)
-

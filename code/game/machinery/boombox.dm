@@ -129,7 +129,7 @@
 /obj/item/device/cassette/tape3/New()
 	..()
 	name = "Tape No. 3"
-	a_side = 'sound/music/elektrichka.ogg'
+	a_side = 'sound/music/luftballons.ogg'
 	b_side = 'sound/music/elektrichka.ogg'
 	sound_inside = a_side
 
