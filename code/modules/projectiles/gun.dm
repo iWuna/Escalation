@@ -73,6 +73,7 @@
 	var/fire_anim = null
 	var/safety = 1 //Whether or not the safety is on.
 	var/drawsound = 0
+	var/use_launcher = FALSE
 
 	var/sel_mode = 1 //index of the currently selected mode
 	var/list/firemodes = list()
@@ -127,8 +128,8 @@
 				item_state_slots[slot_l_hand_str] = wielded_item_state
 				item_state_slots[slot_r_hand_str] = wielded_item_state
 			else
-				item_state_slots[slot_l_hand_str] = initial(item_state)
-				item_state_slots[slot_r_hand_str] = initial(item_state)
+				item_state_slots[slot_l_hand_str] = item_state
+				item_state_slots[slot_r_hand_str] = item_state
 
 //Checks whether a given mob can use the gun
 //Any checks that shouldn't result in handle_click_empty() being called if they fail should go here.
@@ -429,7 +430,7 @@
 			playsound(user, 'sound/weapons/silencedshotgun.ogg', 50, 1, 1)
 		else
 			playsound(user, 'sound/weapons/silencedgun.ogg', 50, 1, 1)
-	
+
 	playsound(user, shot_sound, shot_sound_vol, 1)
 
 	if(istype(src,/obj/item/weapon/gun/launcher/oneuse/))
@@ -554,11 +555,16 @@
 	..()
 	if(!safety)
 		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+		if(use_launcher)
+			user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
+
 
 /obj/item/weapon/gun/equipped(mob/user, var/slot)
 	..()
 	if(!safety && (slot == slot_l_hand || slot == slot_r_hand))
 		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
+		if(use_launcher)
+			user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
 	else
 		user.client.mouse_pointer_icon = null
 

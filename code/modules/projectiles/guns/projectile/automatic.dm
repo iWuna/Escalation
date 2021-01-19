@@ -168,7 +168,7 @@
 		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=5, burst_accuracy=null, dispersion=null)
 		)
 
-	var/use_launcher = 0
+	use_launcher = 0
 	var/obj/item/weapon/gun/launcher/grenade/underslung/launcher
 
 /obj/item/weapon/gun/projectile/automatic/z8/New()

@@ -168,3 +168,11 @@
 /obj/item/trash/crispbread
 	name = "bread wrapping"
 	icon_state = "crispbread"
+
+/obj/item/trash/grenade_pin
+	name = "grenade pin"
+	icon_state = "grenade_pin"
+
+/obj/item/trash/grenade_spoon
+	name = "grenade spoon"
+	icon_state = "grenade_spoon"

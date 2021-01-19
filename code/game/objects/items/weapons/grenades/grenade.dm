@@ -12,6 +12,7 @@
 	var/active = 0
 	var/det_time = 50
 	var/arm_sound = 'sound/effects/pinpull.ogg'
+	var/pinless = FALSE
 
 /obj/item/weapon/grenade/proc/clown_check(var/mob/living/user)
 	if((CLUMSY in user.mutations) && prob(50))
@@ -77,6 +78,12 @@
 	active = 1
 	playsound(loc, arm_sound, 75, 0, -3)
 
+	if (!pinless)
+		new /obj/item/trash/grenade_spoon(get_turf(src))
+		user.put_in_hands(new /obj/item/trash/grenade_pin)
+		if(prob(5))
+			user.swap_hand()
+		// 	mob:swap_hand()
 	spawn(det_time)
 		detonate()
 		return

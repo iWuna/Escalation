@@ -718,7 +718,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/atrifleman
+//	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/atrifleman
 	selection_color = "#4682B4"
 	position = "fireteam"
 	amount = 2

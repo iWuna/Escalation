@@ -91,10 +91,28 @@
 		icon_state = "ak74"
 		item_state = "ak74"
 		wielded_item_state = "ak74-wielded"
+		if(wielded_item_state)
+			var/mob/living/M = loc
+			if(istype(M))
+				if(M.can_wield_item(src) && src.is_held_twohanded(M))
+					item_state_slots[slot_l_hand_str] = wielded_item_state
+					item_state_slots[slot_r_hand_str] = wielded_item_state
+				else
+					item_state_slots[slot_l_hand_str] = item_state
+					item_state_slots[slot_r_hand_str] = item_state
 	else
 		icon_state = "ak74-empty"
 		item_state = "ak74-empty"
 		wielded_item_state = "ak74-wielded-empty"
+		if(wielded_item_state)
+			var/mob/living/M = loc
+			if(istype(M))
+				if(M.can_wield_item(src) && src.is_held_twohanded(M))
+					item_state_slots[slot_l_hand_str] = wielded_item_state
+					item_state_slots[slot_r_hand_str] = wielded_item_state
+				else
+					item_state_slots[slot_l_hand_str] = item_state
+					item_state_slots[slot_r_hand_str] = item_state
 	update_held_icon()
 
 /obj/item/weapon/gun/projectile/automatic/rifle/ak74/black
@@ -256,7 +274,7 @@
 	jam_chance = 0.285
 	slowdown_general = 0.27
 
-	var/use_launcher = FALSE
+	use_launcher = FALSE
 	var/obj/item/weapon/gun/launcher/grenade/underslung/gp25/launcher
 
 	firemodes = list(
@@ -319,13 +337,14 @@
 	else
 		to_chat(usr, "\red You should be holding weapon in active hand to do this!")
 
-/obj/item/weapon/gun/projectile/automatic/rifle/ak74gl/pickup(mob/user)
+/* /obj/item/weapon/gun/projectile/automatic/rifle/ak74gl/pickup(mob/user)
 	..()
 	if(!safety)
 		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
 		if (use_launcher)
 			spawn(1)
 				user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
+*/
 
 
 /obj/item/weapon/gun/projectile/automatic/rifle/m16a2
@@ -514,7 +533,7 @@
 	cocked_sound = 'sound/weapons/gunporn/m16_chargeback.ogg'
 	dist_shot_sound = 'sound/weapons/gunshot/dist/m16_dist.ogg'
 
-	var/use_launcher = FALSE
+	use_launcher = FALSE
 	var/obj/item/weapon/gun/launcher/grenade/underslung/m203/launcher
 
 	firemodes = list(
@@ -577,15 +596,6 @@
 				playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
 	else
 		to_chat(user, "\red You should be holding weapon in active hand to do this!")
-
-/obj/item/weapon/gun/projectile/automatic/rifle/m16a1gl/pickup(mob/user)
-	..()
-	if(!safety)
-		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
-		if (use_launcher)
-			spawn(1)
-				user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
-
 
 /obj/item/weapon/gun/projectile/automatic/rifle/g3a3
 	name = "G3A3"
@@ -712,7 +722,7 @@
 		list(mode_name="automatic",    burst=1, fire_delay=0.4,  move_delay=3,    one_hand_penalty=8, burst_accuracy=null,       dispersion=list(0.3, 0.6, 0.9), automatic = 0.7),
 		)
 
-	var/use_launcher = FALSE
+	use_launcher = FALSE
 	var/obj/item/weapon/gun/launcher/grenade/underslung/m203/launcher
 
 /obj/item/weapon/gun/projectile/automatic/rifle/g3tgs/New()
@@ -770,14 +780,6 @@
 				playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
 	else
 		to_chat(user, "\red You should be holding weapon in active hand to do this!")
-
-/obj/item/weapon/gun/projectile/automatic/rifle/g3tgs/pickup(mob/user)
-	..()
-	if(!safety)
-		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
-		if (use_launcher)
-			spawn(1)
-				user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
 
 /obj/item/weapon/gun/projectile/automatic/rifle/vz58 //Don't Use
 	name = "Vz.58"
@@ -859,7 +861,7 @@
 		list(mode_name="semiauto",     burst=1, fire_delay=2,    move_delay=null, one_hand_penalty=2, burst_accuracy=null,              dispersion=null,                          automatic = 0),
 		list(mode_name="automatic",    burst=1, fire_delay=0.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null,              dispersion=list(0.2),                     automatic = 0.5),
 		)
-	var/use_launcher = FALSE
+	use_launcher = FALSE
 	var/obj/item/weapon/gun/launcher/grenade/underslung/gp25/launcher//19.09.17 replace with so retarded gp-70
 
 /obj/item/weapon/gun/projectile/automatic/rifle/vz58gl/New()
@@ -911,14 +913,6 @@
 				playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
 	else
 		to_chat(user, "\red You should be holding weapon in active hand to do this!")
-
-/obj/item/weapon/gun/projectile/automatic/rifle/vz58gl/pickup(mob/user)
-	..()
-	if(!safety)
-		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
-		if (use_launcher)
-			spawn(1)
-				user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
 
 /obj/item/weapon/gun/projectile/automatic/rifle/mpikm
 	name = "MPi-KM"
@@ -1069,7 +1063,7 @@
 		list(mode_name="semiauto",      burst=1, fire_delay=3.5,    move_delay=null, one_hand_penalty=5, burst_accuracy=null,              dispersion=list(0.0, 0.1, 0.2),                           automatic = 0),
 		list(mode_name="automatic",     burst=1, fire_delay=0.7,  move_delay=2,    one_hand_penalty=6, burst_accuracy=null,              dispersion=list(0.3, 0.4, 0.6),           automatic = 0.6),
 		)
-	var/use_launcher = FALSE
+	use_launcher = FALSE
 	var/obj/item/weapon/gun/launcher/grenade/underslung/gp25/launcher
 
 /obj/item/weapon/gun/projectile/automatic/rifle/mpikmgl/update_icon()
@@ -1127,14 +1121,6 @@
 				playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
 	else
 		to_chat(user, "\red You should be holding weapon in active hand to do this!")
-
-/obj/item/weapon/gun/projectile/automatic/rifle/mpikmgl/pickup(mob/user)
-	..()
-	if(!safety)
-		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
-		if (use_launcher)
-			spawn(1)
-				user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
 
 /obj/item/weapon/gun/projectile/automatic/rifle/mpiak74n
 	name = "MPi-AK-74N"
@@ -1202,7 +1188,7 @@
 	jam_chance = 0.285
 	slowdown_general = 0.27
 
-	var/use_launcher = FALSE
+	use_launcher = FALSE
 	var/obj/item/weapon/gun/launcher/grenade/underslung/gp25/launcher
 
 	firemodes = list(
@@ -1265,14 +1251,6 @@
 				playsound(src, 'sound/weapons/gunporn/m203_select.ogg', 50, 1)
 	else
 		to_chat(user, "\red You should be holding weapon in active hand to do this!")
-
-/obj/item/weapon/gun/projectile/automatic/rifle/mpiak74gl/pickup(mob/user)
-	..()
-	if(!safety)
-		user.client.mouse_pointer_icon = file("icons/misc/pointer.dmi")
-		if (use_launcher)
-			spawn(1)
-				user.client.mouse_pointer_icon = file("icons/misc/grenade_pointer.dmi")
 
 /obj/item/weapon/gun/projectile/automatic/rifle/mpiaks74n
 	name = "MPi-AKS-74N"

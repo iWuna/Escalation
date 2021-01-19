@@ -111,7 +111,7 @@
 	left_pouch = /obj/item/weapon/storage/belt/suit/ammo/sa/lmg
 	r_pocket = null
 	back = /obj/item/weapon/storage/backpack/gassoviet
-    head = /obj/item/clothing/head/garcap/soviet
+	head = /obj/item/clothing/head/garcap/soviet
 	belt = /obj/item/weapon/storage/belt/harness/sa
 
 /decl/hierarchy/outfit/job/coldwar/soviet/platmgass
@@ -254,7 +254,7 @@
 	shoes = /obj/item/clothing/shoes/soviet/field
 	holster = /obj/item/weapon/storage/belt/holster/aps
 	back = /obj/item/weapon/storage/backpack/soviet_tabletbag
-	head = head = /obj/item/clothing/head/soviet/officer
+	head = /obj/item/clothing/head/soviet/officer
 	l_pocket = /obj/item/weapon/masterkey/sovzampolit
 	r_pocket = null
 	belt = /obj/item/weapon/storage/belt/sa
@@ -268,7 +268,7 @@
 	back = /obj/item/weapon/storage/backpack/gassoviet
 	left_pouch = /obj/item/weapon/storage/belt/suit/ammo/sa
 	right_pouch = /obj/item/weapon/storage/belt/suit/ammo/sa/grenades
-	head = head = /obj/item/clothing/head/soviet/cap/afghanka
+	head = /obj/item/clothing/head/soviet/cap/afghanka
 	l_hand = /obj/item/weapon/maptool
 	r_pocket = null
 	l_ear = /obj/item/device/binoculars/wp
@@ -1145,7 +1145,7 @@
 	right_pouch = /obj/item/weapon/storage/belt/suit/ammo/usmc
 	r_pocket = null
 	back = /obj/item/weapon/storage/backpack/usmc_buttpack
-	head = /obj/item/clothing/head/usmc/cap/winter
+//	head = /obj/item/clothing/head/usmc/cap/winter
 	suit = /obj/item/clothing/suit/armor/vest/coat/usa
 	belt = /obj/item/weapon/storage/belt/harness/usmc
 	l_hand = /obj/item/clothing/head/helmet/coldwar/usmc/pasgt/winter
@@ -1160,7 +1160,7 @@
 	right_pouch = /obj/item/weapon/storage/belt/suit/ammo/usmc
 	r_pocket = null
 	back = /obj/item/weapon/gun/launcher/oneuse/m72
-	head = /obj/item/clothing/head/usmc/cap/winter
+//	head = /obj/item/clothing/head/usmc/cap/winter
 	suit = /obj/item/clothing/suit/armor/vest/coat/usa
 	belt = /obj/item/weapon/storage/belt/harness/usmc
 	l_hand = /obj/item/clothing/head/helmet/coldwar/usmc/pasgt/winter
@@ -1175,7 +1175,7 @@
 	right_pouch = /obj/item/weapon/storage/belt/suit/ammo/usmc/ugrenades
 	suit = /obj/item/clothing/suit/armor/vest/coat/usa
 	back = /obj/item/weapon/storage/backpack/usmc_buttpack
-	head = /obj/item/clothing/head/usmc/cap/winter
+//	head = /obj/item/clothing/head/usmc/cap/winter
 	belt = /obj/item/weapon/storage/belt/harness/usmc
 	l_hand = /obj/item/clothing/head/helmet/coldwar/usmc/pasgt/winter
 
@@ -1187,7 +1187,7 @@
 	back_2 = /obj/item/weapon/gun/projectile/automatic/xm249
 	left_pouch = /obj/item/weapon/storage/belt/suit/ammo/usmc/lmg
 	back = /obj/item/weapon/storage/backpack/usmc_buttpack
-	head = /obj/item/clothing/head/usmc/cap/winter
+//	head = /obj/item/clothing/head/usmc/cap/winter
 	holster = /obj/item/weapon/storage/belt/holster/usmc
 	suit = /obj/item/clothing/suit/armor/vest/coat/usa
 	belt = /obj/item/weapon/storage/belt/harness/usmc
@@ -1203,7 +1203,7 @@
 	left_pouch = /obj/item/weapon/storage/belt/suit/ammo/usmc
 	right_pouch = /obj/item/weapon/storage/belt/suit/ammo/usmc/lmg
 	r_pocket = null
-	head = /obj/item/clothing/head/usmc/cap/winter
+//	head = /obj/item/clothing/head/usmc/cap/winter
 	back = /obj/item/weapon/storage/backpack/alice/medium
 	suit = /obj/item/clothing/suit/armor/vest/coat/usa
 	belt = /obj/item/weapon/storage/belt/harness/usmc
@@ -1220,7 +1220,7 @@
 	right_pouch = /obj/item/weapon/storage/belt/suit/ammo/usmc
 	r_pocket = null
 	back = /obj/item/weapon/gun/launcher/smaw
-	head = /obj/item/clothing/head/usmc/cap/winter
+//	head = /obj/item/clothing/head/usmc/cap/winter
 	holster = /obj/item/weapon/storage/belt/holster/usmc
 	suit = /obj/item/clothing/suit/armor/vest/coat/usa
 	belt = /obj/item/weapon/storage/belt/harness/usmc

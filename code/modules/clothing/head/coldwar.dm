@@ -84,7 +84,7 @@
 	name = "altyn helmet"
 	desc = "A recently engineered titanium helmet, issued in limited quantities to special KGB and Spetsnaz GRU units."
 	icon_state = "altyn"
-	armor = list(melee = 62, bullet = 22, laser = 10, energy = 10, bomb = 55, bio = 0, rad = 0)
+	armor = list(melee = 62, bullet = 30, laser = 10, energy = 10, bomb = 55, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 	icon_state_unzipped = "altyn-unzipped"
 

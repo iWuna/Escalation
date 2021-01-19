@@ -71,6 +71,8 @@
 	det_time = 35
 	throw_range = 16
 	icon_state = "rdg2"
+	arm_sound = 'sound/effects/rdg2.ogg'
+	pinless = TRUE
 
 /obj/item/weapon/grenade/smokebomb/finn
 	desc = "It is set to detonate in 2 seconds."

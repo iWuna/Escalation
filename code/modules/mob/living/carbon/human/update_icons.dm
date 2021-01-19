@@ -838,5 +838,5 @@ var/global/list/damage_icon_parts = list()
 #undef R_HAND_LAYER
 #undef TARGETED_LAYER
 #undef FIRE_LAYER
-#undef SURRENDER_LAYER	
+#undef SURRENDER_LAYER
 #undef TOTAL_LAYERS

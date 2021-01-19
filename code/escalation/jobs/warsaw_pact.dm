@@ -397,7 +397,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/soviet/atstrelok
+//	outfit_type = /decl/hierarchy/outfit/job/coldwar/soviet/atstrelok
 	selection_color = "#B22222"
 	rank_number = 5
 	position = "fireteam"
@@ -819,7 +819,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/nvaddr/grenadier
+//	outfit_type = /decl/hierarchy/outfit/job/coldwar/nvaddr/grenadier
 	selection_color = "#FA8072"
 	rank_number = 1
 	position = "fireteam"
@@ -879,7 +879,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/nvaddr/atrifleman
+//	outfit_type = /decl/hierarchy/outfit/job/coldwar/nvaddr/atrifleman
 	selection_color = "#FA8072"
 	rank_number = 1
 	position = "fireteam"
