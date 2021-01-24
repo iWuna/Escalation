@@ -633,7 +633,7 @@
 "sj" = (/obj/effect/floor_decal/newcorner/blue/diagonal,/obj/structure/iv_drip,/turf/simulated/floor/tiled/white,/area/coldwar/warpactfob)
 "sk" = (/obj/effect/floor_decal/newcorner/blue/diagonal,/obj/machinery/door/unpowered/simple/metalglass1{dir = 2},/turf/simulated/floor/tiled/white,/area/coldwar/warpactfob)
 "sm" = (/obj/effect/floor_decal/newcorner/red/corner{dir = 4},/turf/simulated/floor/tiled,/area/coldwar)
-"sr" = (/obj/structure/closet/crate/ammo{name = "RG-7 crate"},/obj/item/ammo_casing/rpg_missile/pg7,/obj/item/ammo_casing/rpg_missile/pg7,/obj/item/ammo_casing/rpg_missile/pg7,/obj/item/ammo_casing/rpg_missile/pg7,/obj/item/ammo_casing/rpg_missile/pg7,/obj/item/ammo_casing/rpg_missile/pg7,/obj/effect/floor_decal/turf/platingalt,/obj/machinery/light/small/warmtint{dir = 8},/turf/simulated/floor/wood,/area/coldwar/warpactfob)
+"sr" = (/obj/structure/closet/crate/ammo{name = "RG-7 crate"},/obj/item/ammo_casing/rpg_missile/rg7,/obj/item/ammo_casing/rpg_missile/rg7,/obj/item/ammo_casing/rpg_missile/rg7,/obj/item/ammo_casing/rpg_missile/rg7,/obj/item/ammo_casing/rpg_missile/rg7,/obj/item/ammo_casing/rpg_missile/rg7,/obj/effect/floor_decal/turf/platingalt,/obj/machinery/light/small/warmtint{dir = 8},/turf/simulated/floor/wood,/area/coldwar/warpactfob)
 "st" = (/obj/structure/table/greenmetal,/obj/effect/floor_decal/turf/woodalt2,/turf/simulated/floor/wood,/area/coldwar/house1)
 "su" = (/obj/structure/sign/vehicle/moskvich4,/turf/unsimulated/floor/road{icon_state = "concreteroad"},/area/coldwar)
 "sx" = (/obj/effect/floor_decal/newcorner/green/solid{icon_state = "plating-diagonal"},/obj/machinery/light/small/warmtint,/turf/simulated/floor/tiled/bunker,/area/coldwar/warpactfob)

@@ -6,9 +6,9 @@
 	icon_state = "f1grenade"
 	throw_speed = 2
 	throw_range = 10
-	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/offensive)
+	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/defensive)
 	num_fragments = 290  //total number of fragments produced by the grenade
-	explosion_size = 2
+	explosion_size = 4
 
 /obj/item/weapon/grenade/frag/rgd5
 	name = "RGD-5 grenade"
@@ -16,9 +16,9 @@
 	icon_state = "rgd5grenade"
 	throw_speed = 3
 	throw_range = 13
-	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/defensive)
+	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/offensive)
 	num_fragments = 170  //total number of fragments produced by the grenade
-	explosion_size = 4
+	explosion_size = 2
 
 ///muricane granades////
 ////////////////////////
@@ -140,6 +140,7 @@
 	num_fragments = 70  //total number of fragments produced by the grenade
 	det_time = 100
 	explosion_size = 6
+	pinless = TRUE
 
 /obj/item/weapon/grenade/frag/satchelnato/on_explosion(var/turf/O)
 	if(explosion_size)
@@ -161,6 +162,7 @@
 	num_fragments = 70  //total number of fragments produced by the grenade
 	det_time = 100
 	explosion_size = 6
+	pinless = TRUE
 
 /obj/item/weapon/grenade/frag/satchelwp/on_explosion(var/turf/O)
 	if(explosion_size)
@@ -184,6 +186,7 @@
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/ugl)
 	explosion_size = 1
 	throw_range = 30
+	pinless = TRUE
 	arm_sound = 'sound/weapons/grenlauncher.ogg'
 
 
@@ -199,6 +202,7 @@
 	explosion_size = 1
 	throw_speed = 2
 	throw_range = 30
+	pinless = TRUE
 	arm_sound = 'sound/weapons/grenlauncher.ogg'
 
 /obj/item/weapon/grenade/frag/vog25/attack_self(mob/user)

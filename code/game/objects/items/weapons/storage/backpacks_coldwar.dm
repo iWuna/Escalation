@@ -375,19 +375,34 @@
 
 /obj/item/weapon/storage/backpack/rpgsa
 	name = "RPG rocket backpack"
-	desc = "Soviet Army backpack for RPG rockets. Can hold four rockets."
+	desc = "Soviet Army backpack for RPG rockets. Can hold two rockets."
 	icon_state = "sa_rpg2"
 	item_state = "sa_rpg"
 	reachable = 1
-	storage_slots = 4
+	storage_slots = 2
+	max_storage_space = 20
 	open_delay = 0
 	can_hold = list (/obj/item/ammo_casing/rpg_missile, /obj/item/ammo_casing/rpg_missile/finn)
 	startswith = list(
-			/obj/item/ammo_casing/rpg_missile,
-			/obj/item/ammo_casing/rpg_missile,
-			/obj/item/ammo_casing/rpg_missile,
-			/obj/item/ammo_casing/rpg_missile
+			/obj/item/ammo_casing/rpg_missile/pg7,
+			/obj/item/ammo_casing/rpg_missile/pg7
 			)
+
+/obj/item/weapon/storage/backpack/rpgsa/update_icon()
+	to_chat(usr, "<span class='warning'>It works!</span>")
+	icon_state = addtext(initial(icon_state),"-[contents.len]")
+	if (contents.len == 1 && contents[1].name == "OG-7")
+		icon_state = "sa_rpg2-1-og7"
+	if (contents.len == 2)
+		if (contents[1].name == "OG-7" && contents[2].name != "OG-7")
+			icon_state = "sa_rpg2-2-og7-pg7"
+		else
+			if (contents[1].name != "OG-7" && contents[2].name == "OG-7")
+				icon_state = "sa_rpg2-2-pg7-og7"
+			else
+				if (contents[1].name == "OG-7" && contents[2].name == "OG-7")
+					icon_state = "sa_rpg2-2-og7"
+
 
 /obj/item/weapon/storage/backpack/rpgsa/assistant
 	name = "RPG Assistant rocket backpack"

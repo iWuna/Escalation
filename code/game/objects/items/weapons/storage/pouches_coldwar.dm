@@ -62,7 +62,7 @@
 
 /obj/item/weapon/storage/belt/holster/sa
 	name = "Makarov holster"
-	storage_slots = 3
+	storage_slots = 2
 	holster_sound = 'sound/effects/holster/holsterin.ogg'
 	unholster_sound = 'sound/effects/holster/holsterout.ogg'
 	special_item = /obj/item/weapon/gun/projectile/makarov

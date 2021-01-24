@@ -43,7 +43,7 @@
 /obj/item/ammo_casing/a762x54/ap
 	desc = "A 7.62x54mmR AP bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762x54/ap
-	
+
 /obj/item/ammo_casing/a762x54/tr
 	desc = "A 7.62x54mmR tracer bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762x54/tr
@@ -58,7 +58,7 @@
 /obj/item/ammo_casing/a762x53/ap
 	desc = "A 7.62x53mmR AP bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762x53/ap
-	
+
 /obj/item/ammo_casing/a762x53/tr
 	desc = "A 7.62x53mmR tracer bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762x53/tr
@@ -73,7 +73,7 @@
 /obj/item/ammo_casing/a303/ap
 	desc = "A .303 British AP bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762x54/ap
-	
+
 /obj/item/ammo_casing/a303/tr
 	desc = "A .303 British tracer bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762x54/tr
@@ -142,7 +142,7 @@
 /obj/item/ammo_casing/a9x18/ap
 	desc = "A 9x18mm AP bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a9x18/ap
-	
+
 /obj/item/ammo_casing/a9x18/tr
 	desc = "A 9x18mm tracer bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a9x18/tr
@@ -204,11 +204,10 @@
 	projectile_type = /obj/item/projectile/bullet/mk19_40x53mm/pow
 
 /obj/item/ammo_casing/rpg_missile
-	name = "RG-7"
-	desc = "A regular morkovka for rpg"
+	name = "RPG_MISSILE"
+	desc = "You shouldn't be seeing this..."
 	caliber = "7p16"
 	icon_state = "rg-7"
-	projectile_type = /obj/item/projectile/bullet/rgprocket/he
 	w_class = 4
 	slot_flags = null
 
@@ -217,14 +216,24 @@
 		return
 	..()
 
-/obj/item/ammo_casing/rpg_missile/rg7
+/obj/item/ammo_casing/rpg_missile/pg7
 	name = "PG-7"
 	desc = "93mm HEAT rocket for the RPG-7. Effective against most ground vehicles. Watch out for the backblast!"
+	projectile_type = /obj/item/projectile/bullet/rgprocket/heat
 	layer = 4
 
 /obj/item/ammo_casing/rpg_missile/og7
 	name = "OG-7"
 	desc = "40mm Fragmentation rocket for the RPG-7. Effective against ground infantry. Watch out for the backblast!"
+	projectile_type = /obj/item/projectile/bullet/rgprocket/frag
+	icon_state = "og-7"
+	layer = 4
+
+/obj/item/ammo_casing/rpg_missile/tbg7
+	name = "TBG-7"
+	desc = "105mm Thermobaric rocket for the RPG-7. Effective against ground infantry. Watch out for the backblast!"
+	projectile_type = /obj/item/projectile/bullet/rgprocket/he
+	icon_state = "tbg-7"
 	layer = 4
 
 /obj/item/ammo_casing/rpg_missile/smaw

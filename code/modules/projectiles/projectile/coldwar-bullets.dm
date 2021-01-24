@@ -272,7 +272,7 @@
 //	impact_force = 1
 	penetrating = 0
 	kill_count = 40
-	fire_sound = null//here we gonna use sound in AGS and not in bullets
+	fire_sound = null//here we gonna use sound in RPG and not in bullets
 
 	muzzle_type = /obj/effect/projectile/rocket/rpg
 	breech_type = /obj/effect/projectile/rocket/rpg/breech
@@ -299,7 +299,10 @@
 			M1.pixel_y = -location.pixel_y
 			M1.activate()
 
-/obj/item/projectile/bullet/rgprocket/on_impact(var/atom/target, var/blocked = 0)
+/obj/item/projectile/bullet/rgprocket/heat
+	penetrating = 1
+
+/obj/item/projectile/bullet/rgprocket/heat/on_impact(var/atom/target, var/blocked = 0)
 	explosion(target, 1, 2, 3, 3)
 
 /obj/item/projectile/bullet/rgprocket/he
@@ -307,6 +310,14 @@
 
 /obj/item/projectile/bullet/rgprocket/he/on_impact(var/atom/target, var/blocked = 0)
 	explosion(target, 1, 3, 5, 6)
+
+/obj/item/projectile/bullet/rgprocket/frag
+	penetrating = 0
+
+/obj/item/projectile/bullet/rgprocket/frag/on_impact(var/atom/target, var/blocked = 0)
+	var/turf/O = get_turf(src)
+	fragmentate(O, 230, 7, list(/obj/item/projectile/bullet/pellet/fragment/defensive))
+	explosion(target, 1, 2, 3, 3)
 
 /obj/item/projectile/bullet/rgprocket/gustaf
 	icon_state = "gustaf"

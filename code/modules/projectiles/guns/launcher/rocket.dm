@@ -117,10 +117,21 @@
 /obj/item/weapon/gun/launcher/rpg7/consume_next_projectile(mob/user)
 	if(rockets.len)
 		var/obj/item/ammo_casing/rpg_missile/I = rockets[1]
-		var/obj/item/projectile/bullet/rgprocket/he/M = new (src)
+		if (rockets[1].name == "PG-7")
+			var/obj/item/projectile/bullet/rgprocket/heat/M = new (src)
+			rockets -= I
+			return M
+		else
+			if(rockets[1].name == "TBG-7")
+				var/obj/item/projectile/bullet/rgprocket/he/M = new (src)
+				rockets -= I
+				return M
+			else
+				if(rockets[1].name == "OG-7")
+					var/obj/item/projectile/bullet/rgprocket/frag/M = new (src)
+					rockets -= I
+					return M
 		//M.primed = TRUE
-		rockets -= I
-		return M
 	return null
 
 /obj/item/weapon/gun/launcher/rpg7/handle_post_fire(mob/user, atom/target)

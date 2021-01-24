@@ -43,6 +43,7 @@
 	desc = "Smoke Round, Cannot be thrown as the usual grenade, by the way."
 	icon_state = "M406s"
 	arm_sound = 'sound/weapons/grenlauncher.ogg'
+	pinless = TRUE
 
 /obj/item/weapon/grenade/smokebomb/shell40mm/attack_self(mob/user)
 	return
@@ -52,6 +53,7 @@
 	desc = "Smoke Round, Cannot be thrown as the usual grenade, by the way."
 	icon_state = "40x103mmshells"
 	arm_sound = 'sound/weapons/grenlauncher.ogg'
+	pinless = TRUE
 
 /obj/item/weapon/grenade/smokebomb/vog25/attack_self(mob/user)
 	return

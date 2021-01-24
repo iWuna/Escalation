@@ -84,48 +84,29 @@
 		list(mode_name="automatic",    burst=1, fire_delay=0.5,  move_delay=2, one_hand_penalty=5, burst_accuracy=null,              dispersion=list(0.15, 0.25, 0.45),                     automatic = 0.5),
 		)
 
-/obj/item/weapon/gun/projectile/automatic/rifle/ak74/update_icon()
+/obj/item/weapon/gun/projectile/automatic/rifle/update_icon()
 	..()
 
 	if(ammo_magazine)
-		icon_state = "ak74"
-		item_state = "ak74"
-		wielded_item_state = "ak74-wielded"
-		if(wielded_item_state)
-			var/mob/living/M = loc
-			if(istype(M))
-				if(M.can_wield_item(src) && src.is_held_twohanded(M))
-					item_state_slots[slot_l_hand_str] = wielded_item_state
-					item_state_slots[slot_r_hand_str] = wielded_item_state
-				else
-					item_state_slots[slot_l_hand_str] = item_state
-					item_state_slots[slot_r_hand_str] = item_state
+		icon_state = initial(icon_state)
+		item_state = initial(icon_state)
+		wielded_item_state = initial(wielded_item_state)
 	else
-		icon_state = "ak74-empty"
-		item_state = "ak74-empty"
-		wielded_item_state = "ak74-wielded-empty"
-		if(wielded_item_state)
-			var/mob/living/M = loc
-			if(istype(M))
-				if(M.can_wield_item(src) && src.is_held_twohanded(M))
-					item_state_slots[slot_l_hand_str] = wielded_item_state
-					item_state_slots[slot_r_hand_str] = wielded_item_state
-				else
-					item_state_slots[slot_l_hand_str] = item_state
-					item_state_slots[slot_r_hand_str] = item_state
+		icon_state = addtext(initial(icon_state),"-empty")
+		item_state = addtext(initial(icon_state),"-empty")
+		wielded_item_state = addtext(initial(wielded_item_state),"-empty")
+
+	if(usr.can_wield_item(src) && src.is_held_twohanded(usr))
+		item_state_slots[slot_l_hand_str] = wielded_item_state
+		item_state_slots[slot_r_hand_str] = wielded_item_state
+	else
+		item_state_slots[slot_l_hand_str] = item_state
+		item_state_slots[slot_r_hand_str] = item_state
 	update_held_icon()
 
 /obj/item/weapon/gun/projectile/automatic/rifle/ak74/black
 	desc = "AK-74 with polymer kit and dim finish. Chambers 5.45x39 rounds."
 	icon_state = "ak74black"
-
-/obj/item/weapon/gun/projectile/automatic/rifle/ak74/black/update_icon()
-	..()
-
-	if(ammo_magazine)
-		icon_state = "ak74black"
-	else
-		icon_state = "ak74black-empty"
 
 /obj/item/weapon/gun/projectile/automatic/rifle/aek971
 	name = "AEK-971"
@@ -158,19 +139,6 @@
 		list(mode_name="automatic",    burst=1, fire_delay=0.5,  move_delay=2, one_hand_penalty=5, burst_accuracy=null,              dispersion=list(0.15, 0.25, 0.45),                     automatic = 0.5),
 		)
 
-/obj/item/weapon/gun/projectile/automatic/rifle/aek971/update_icon()
-	..()
-
-	if(ammo_magazine)
-		icon_state = "aek971"
-		item_state = "aek971"
-		wielded_item_state = "aek971-wielded"
-	else
-		icon_state = "aek971-empty"
-		item_state = "aek971-empty"
-		wielded_item_state = "aek971-wielded-empty"
-	update_held_icon()
-
 /obj/item/weapon/gun/projectile/automatic/rifle/aks74
 	name = "AKS-74"
 	desc = "A lighter version of the standard-issue Soviet Army combat rifle. Chambers 5.45x39 rounds."
@@ -201,16 +169,6 @@
 		list(mode_name="automatic",     burst=1, fire_delay=0.5,  move_delay=1,    one_hand_penalty=4, burst_accuracy=null,              dispersion=list(0.2, 0.3, 0.6),                     automatic = 0.5),
 		)
 
-/obj/item/weapon/gun/projectile/automatic/rifle/aks74/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "aks74"
-		wielded_item_state = "aks-wielded"
-	else
-		icon_state = "aks74-empty"
-		wielded_item_state = "aks-wielded-empty"
-
 /obj/item/weapon/gun/projectile/automatic/rifle/aks74u
 	name = "AKS-74U"
 	desc = "A standard issue carbine used by the Soviet Army. Chambers 5.45x39 rounds."
@@ -239,16 +197,6 @@
 		list(mode_name="semiauto",      burst=1, fire_delay=3,    move_delay=null, one_hand_penalty=3, burst_accuracy=null,            dispersion=list(0.0, 0.1, 0.2),              automatic = 0),
 		list(mode_name="automatic",     burst=1, fire_delay=0.4,  move_delay=1,    one_hand_penalty=4, burst_accuracy=null,              dispersion=list(0.3, 0.4, 0.7),                     automatic = 0.6),
 		)
-
-/obj/item/weapon/gun/projectile/automatic/rifle/aks74u/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "aks74u"
-		wielded_item_state = "aks-wielded"
-	else
-		icon_state = "aks74u-empty"
-		wielded_item_state = "aks-wielded-empty"
 
 /obj/item/weapon/gun/projectile/automatic/rifle/ak74gl
 	name = "AK-74"
@@ -309,16 +257,6 @@
 	else
 		..()
 
-/obj/item/weapon/gun/projectile/automatic/rifle/ak74gl/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "ak74gl"
-		wielded_item_state = "ak74gl-wielded"
-	else
-		icon_state = "ak74gl-empty"
-		wielded_item_state = "ak74gl-wielded-empty"
-
 /obj/item/weapon/gun/projectile/automatic/rifle/ak74gl/verb/set_gp()
 	set name = "Grenade Launcher"
 	set category = "Object"
@@ -376,16 +314,6 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=1.5,    move_delay=2,    one_hand_penalty=5, burst_accuracy=list(2,1,1),   dispersion=list(0.1, 0.3, 0.4)),
 		)
 
-/obj/item/weapon/gun/projectile/automatic/rifle/m16a2/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "m16a2"
-		wielded_item_state = "m16-wielded"
-	else
-		icon_state = "m16a2-empty"
-		wielded_item_state = "m16-wielded-empty"
-
 /obj/item/weapon/gun/projectile/automatic/rifle/m14 //do not use
 	name = "M14"
 	desc = "A former standard-issue USMC combat rifle. Chambers 7.62x51 rounds."
@@ -417,16 +345,6 @@
 		list(mode_name="semiauto", burst=1, fire_delay=8.7, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		list(mode_name="automatic",     burst=1,  fire_delay=0.2, move_delay=3,       one_hand_penalty=9, burst_accuracy = null,  dispersion=list(0.8, 1.2),                  automatic = 0.2)
 		)
-
-/obj/item/weapon/gun/projectile/automatic/rifle/m14/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "m14"
-		wielded_item_state = "m14-wielded"
-	else
-		icon_state = "m14-empty"
-		wielded_item_state = "m14-wielded-empty"
 
 
 /obj/item/weapon/gun/projectile/automatic/rifle/m16a1
@@ -460,16 +378,6 @@
 		list(mode_name="automatic",    burst=1, fire_delay=0.9,  move_delay=2,    one_hand_penalty=5, burst_accuracy = null,            dispersion=list(0.2, 0.3, 0.5),                automatic = 0.5),
 		)
 
-/obj/item/weapon/gun/projectile/automatic/rifle/m16a1/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "m16a1"
-		wielded_item_state = "m16-wielded"
-	else
-		icon_state = "m16a1-empty"
-		wielded_item_state = "m16-wielded-empty"
-
 /obj/item/weapon/gun/projectile/automatic/rifle/xm177
 	name = "XM177"
 	desc = "A standard-issue USMC carbine."
@@ -498,16 +406,6 @@
 		list(mode_name="semiauto",     burst=1, burst=1, fire_delay=3.2,    move_delay=null, one_hand_penalty=4, burst_accuracy=null,          dispersion=list(0.0, 0.1, 0.20)),
 		list(mode_name="automatic",    burst=1, fire_delay=0.8,  move_delay=2,    one_hand_penalty=5, burst_accuracy = null,            dispersion=list(0.3, 0.4, 0.6),                automatic = 0.6),
 		)
-
-/obj/item/weapon/gun/projectile/automatic/rifle/xm177/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "xm177"
-		wielded_item_state = "m16-wielded"
-	else
-		icon_state = "xm177-empty"
-		wielded_item_state = "m16-wielded-empty"
 
 /obj/item/weapon/gun/projectile/automatic/rifle/m16a1gl
 	name = "M16A1 w/ M203"
@@ -568,16 +466,6 @@
 	else
 		..()
 
-/obj/item/weapon/gun/projectile/automatic/rifle/m16a1gl/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "m16a1gl"
-		wielded_item_state = "m16gl-wielded"
-	else
-		icon_state = "m16a1gl-empty"
-		wielded_item_state = "m16gl-wielded-empty"
-
 /obj/item/weapon/gun/projectile/automatic/rifle/m16a1gl/verb/set_gp(mob/user)
 	set name = "Grenade Launcher"
 	set category = "Object"
@@ -628,16 +516,6 @@
 		list(mode_name="automatic",    burst=1, fire_delay=0.4,  move_delay=3,    one_hand_penalty=8, burst_accuracy=null, dispersion=list(0.3, 0.6, 0.9),         automatic = 0.7)
 		)
 
-/obj/item/weapon/gun/projectile/automatic/rifle/g3a3/update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "g3a3"
-		wielded_item_state = "g3a3-wielded"
-	else
-		icon_state = "g3a3-empty"
-		wielded_item_state = "g3a3-wielded-empty"
-	update_held_icon()
-
 /obj/item/weapon/gun/projectile/automatic/rifle/g3a3/old
 	desc = "G3A3 Battle Rifle. This one has a wooden kit and shows signs of extended use. Chambers 7.62x51 rounds."
 	icon_state = "g3a3-old"
@@ -680,16 +558,6 @@
 		list(mode_name="semiauto",     burst=1, fire_delay=4,    move_delay=null, one_hand_penalty=6, burst_accuracy=null,          dispersion=list(0.0, 0.10, 0.20),           automatic = 0),
 		list(mode_name="automatic",    burst=1, fire_delay=0.3,  move_delay=3,    one_hand_penalty=8, burst_accuracy=null, dispersion=list(0.4, 0.7, 1),         automatic = 0.8)
 		)
-
-/obj/item/weapon/gun/projectile/automatic/rifle/g3ka4/update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "g3ka4"
-		wielded_item_state = "g3a3-wielded"
-	else
-		icon_state = "g3ka4-empty"
-		wielded_item_state = "g3a3-wielded-empty"
-	update_held_icon()
 
 /obj/item/weapon/gun/projectile/automatic/rifle/g3tgs
 	name = "G3A3 w/ HK79"
@@ -752,16 +620,6 @@
 	else
 		..()
 
-/obj/item/weapon/gun/projectile/automatic/rifle/g3tgs/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "g3tgs"
-		wielded_item_state = "g3tgs-wielded"
-	else
-		icon_state = "g3tgs-empty"
-		wielded_item_state = "g3tgs-wielded-empty"
-
 /obj/item/weapon/gun/projectile/automatic/rifle/g3tgs/verb/set_gp(mob/user)
 	set name = "Grenade Launcher"
 	set category = "Object"
@@ -811,13 +669,6 @@
 		list(mode_name="semiauto",     burst=1, fire_delay=2,    move_delay=null, one_hand_penalty=2, burst_accuracy=null,              dispersion=null,                          automatic = 0),
 		list(mode_name="automatic",    burst=1, fire_delay=0.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null,              dispersion=list(0.2),                     automatic = 0.5),
 		)
-
-/obj/item/weapon/gun/projectile/automatic/rifle/vz58/update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "vz58"
-	else
-		icon_state = "vz58-empty"
 
 /obj/item/weapon/gun/projectile/automatic/rifle/vz58/black
 	desc = "A standard-issue CSLA combat rifle with a black kit and folding stock. Chambers 7.62x39"
@@ -888,13 +739,6 @@
 	else
 		..()
 
-/obj/item/weapon/gun/projectile/automatic/rifle/vz58gl/update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "vz58gl"
-	else
-		icon_state = "vz58gl-empty"
-
 /obj/item/weapon/gun/projectile/automatic/rifle/vz58gl/verb/set_gp(mob/user)
 	set name = "Grenade launcher"
 	set category = "Object"
@@ -944,16 +788,6 @@
 		list(mode_name="automatic",     burst=1, fire_delay=0.7,  move_delay=2,    one_hand_penalty=6, burst_accuracy=null,              dispersion=list(0.3, 0.4, 0.6),                     automatic = 0.6),
 		)
 
-/obj/item/weapon/gun/projectile/automatic/rifle/mpikm/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "mpikm"
-		wielded_item_state = "mpi-wielded"
-	else
-		icon_state = "mpikm-empty"
-		wielded_item_state = "mpi-wielded-empty"
-
 /obj/item/weapon/gun/projectile/automatic/rifle/mpikms
 	name = "MPi-KMS"
 	desc = "That's an outdated rifle with a folding stock used by NVA DDR. Chambers 7.62x39 rounds."
@@ -984,16 +818,6 @@
 		list(mode_name="automatic",     burst=1, fire_delay=0.7,  move_delay=1,    one_hand_penalty=5, burst_accuracy=null,              dispersion=list(0.35, 0.45, 0.7),                    automatic = 0.7),
 		)
 
-/obj/item/weapon/gun/projectile/automatic/rifle/mpikms/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "mpikms"
-		wielded_item_state = "mpi-wielded"
-	else
-		icon_state = "mpikms-empty"
-		wielded_item_state = "mpi-wielded-empty"
-
 /obj/item/weapon/gun/projectile/automatic/rifle/mpiakmk
 	name = "MPi-AKM-K"
 	desc = "That's an outdated carbine used by NVA DDR. Chambers 7.62x39 rounds."
@@ -1023,16 +847,6 @@
 		list(mode_name="semiauto",      burst=1, fire_delay=3.5,    move_delay=null, one_hand_penalty=4, burst_accuracy=null,              dispersion=list(0.0, 0.1, 0.2),                          automatic = 0),
 		list(mode_name="automatic",     burst=1, fire_delay=0.6,  move_delay=1,    one_hand_penalty=5, burst_accuracy=null,              dispersion=list(0.40, 0.50, 0.75),                    automatic = 0.8),
 		)
-
-/obj/item/weapon/gun/projectile/automatic/rifle/mpiakmk/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "mpiakmk"
-		wielded_item_state = "aks-wielded"
-	else
-		icon_state = "mpiakmk-empty"
-		wielded_item_state = "aks-wielded-empty"
 
 /obj/item/weapon/gun/projectile/automatic/rifle/mpikmgl
 	name = "MPi-KM w/ GP-25"
@@ -1065,16 +879,6 @@
 		)
 	use_launcher = FALSE
 	var/obj/item/weapon/gun/launcher/grenade/underslung/gp25/launcher
-
-/obj/item/weapon/gun/projectile/automatic/rifle/mpikmgl/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "mpikmgp"
-		wielded_item_state = "ak74gl-wielded"
-	else
-		icon_state = "mpikmgp-empty"
-		wielded_item_state = "ak74gl-wielded-empty"
 
 /obj/item/weapon/gun/projectile/automatic/rifle/mpikmgl/New()
 	..()
@@ -1152,18 +956,6 @@
 		list(mode_name="automatic",    burst=1, fire_delay=0.5,  move_delay=2, one_hand_penalty=5, burst_accuracy=null,              dispersion=list(0.15, 0.25, 0.45),                     automatic = 0.5),
 		)
 
-/obj/item/weapon/gun/projectile/automatic/rifle/mpiak74n/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "mpik74"
-		item_state = "mpik74"
-		wielded_item_state = "mpik74-wielded"
-	else
-		icon_state = "mpik74-empty"
-		item_state = "mpik74-empty"
-		wielded_item_state = "mpik74-wielded-empty"
-
 /obj/item/weapon/gun/projectile/automatic/rifle/mpiak74gl
 	name = "MPi-AK-74N w/ GP-25"
 	desc = "A standard-issue NVA DDR rifle with a GP-25 launcher attached. Chambers 5.45x39 rounds."
@@ -1223,17 +1015,6 @@
 	else
 		..()
 
-/obj/item/weapon/gun/projectile/automatic/rifle/mpiak74gl/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "mpik74gp"
-		wielded_item_state = "ak74gl-wielded"
-	else
-		icon_state = "mpik74gp-empty"
-		wielded_item_state = "ak74gl-wielded-empty"
-
-
 /obj/item/weapon/gun/projectile/automatic/rifle/mpiak74gl/verb/set_gp(mob/user)
 	set name = "Grenade Launcher"
 	set category = "Object"
@@ -1284,17 +1065,6 @@
 		list(mode_name="automatic",     burst=1, fire_delay=0.5,  move_delay=1,    one_hand_penalty=4, burst_accuracy=null,              dispersion=list(0.2, 0.3, 0.6),                     automatic = 0.5),
 		)
 
-
-/obj/item/weapon/gun/projectile/automatic/rifle/mpiaks74n/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "mpik74s"
-		wielded_item_state = "aks-wielded"
-	else
-		icon_state = "mpik74s-empty"
-		wielded_item_state = "aks-wielded-empty"
-
 /obj/item/weapon/gun/projectile/automatic/rifle/mpiaks74nk
 	name = "MPi-AKS-74NK"
 	desc = "A standard issue carbine used by the NVA DDR. Chambers 5.45x39 rounds."
@@ -1326,17 +1096,6 @@
 		list(mode_name="automatic",     burst=1, fire_delay=0.4,  move_delay=1,    one_hand_penalty=4, burst_accuracy=null,              dispersion=list(0.3, 0.4, 0.7),                     automatic = 0.6),
 		)
 
-/obj/item/weapon/gun/projectile/automatic/rifle/mpiaks74nk/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "mpik74snk"
-		wielded_item_state = "aks-wielded"
-	else
-		icon_state = "mpik74snk-empty"
-		wielded_item_state = "aks-wielded-empty"
-
-
 /obj/item/weapon/gun/projectile/automatic/rifle/rk62
 	name = "RK62"
 	desc = "A standard-issue Finnish assault rifle. Chambers 7.62x39 rounds."
@@ -1366,15 +1125,6 @@
 		list(mode_name="semiauto",     burst=1, fire_delay=3.6, move_delay=null, one_hand_penalty=4, burst_accuracy=null,              dispersion=list(0.0, 0.1, 0.2),                automatic = 0),
 		list(mode_name="automatic",    burst=1, fire_delay=0.6, move_delay=1,   one_hand_penalty=5,  burst_accuracy=null,              dispersion=list(0.3, 0.4, 0.6), automatic = 0.6),
 		)
-/obj/item/weapon/gun/projectile/automatic/rifle/rk62/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "rk62"
-		wielded_item_state = "rk62-wielded"
-	else
-		icon_state = "rk62-empty"
-		wielded_item_state = "rk62-wielded-empty"
 
 /obj/item/weapon/gun/projectile/automatic/rifle/l1a1
 	name = "L1A1"
@@ -1406,16 +1156,6 @@
 		list(mode_name="quickfire",    burst=1, fire_delay=1.5,  move_delay=1,    one_hand_penalty=8, burst_accuracy=null,         dispersion=list(0.8, 1.1, 1.3),         automatic = 1.5)
 		)
 
-/obj/item/weapon/gun/projectile/automatic/rifle/l1a1/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "l1a1"
-		wielded_item_state = "l1a1-wielded"
-	else
-		icon_state = "l1a1-empty"
-		wielded_item_state = "l1a1-wielded-empty"
-
 /obj/item/weapon/gun/projectile/automatic/rifle/sterling
 	name = "Sterling SMG"
 	desc = "A submachine gun used by the Royal Marines. Chambers 9x19 rounds."
@@ -1446,16 +1186,6 @@
 		list(mode_name="automatic",     burst=1, fire_delay=0.7,  move_delay=1,    one_hand_penalty=3, burst_accuracy=null,              dispersion=list(0.2, 0.3, 0.4),                     automatic = 0.5),
 		)
 
-/obj/item/weapon/gun/projectile/automatic/rifle/sterling/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "sterling"
-		wielded_item_state = "sterling-wielded"
-	else
-		icon_state = "sterling-empty"
-		wielded_item_state = "sterling-wielded-empty"
-
 /obj/item/weapon/gun/projectile/automatic/rifle/kp31
 	name = "Suomi KP/-31"
 	desc = "A submachine gun used by the Finnish Army. Chambers 9x19 rounds."
@@ -1485,13 +1215,3 @@
 		list(mode_name="semiauto",      burst=1, fire_delay=3,    move_delay=null, one_hand_penalty=2, burst_accuracy=null,              dispersion=list(0.0, 0.1, 0.2),                          automatic = 0),
 		list(mode_name="automatic",     burst=1, fire_delay=0.3,  move_delay=1,    one_hand_penalty=3, burst_accuracy=null,              dispersion=list(0.2, 0.3, 0.4),                     automatic = 0.4),
 		)
-
-/obj/item/weapon/gun/projectile/automatic/rifle/kp31/update_icon()
-	..()
-	update_held_icon()
-	if(ammo_magazine)
-		icon_state = "kp31"
-		wielded_item_state = "sterling-wielded"
-	else
-		icon_state = "kp31-empty"
-		wielded_item_state = "sterling-wielded-empty"
